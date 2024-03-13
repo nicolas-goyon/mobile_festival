@@ -20,6 +20,18 @@
 		B77DF5B32B8CC62B00A07876 /* FestivalMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DF5B22B8CC62B00A07876 /* FestivalMobileUITests.swift */; };
 		B77DF5B52B8CC62B00A07876 /* FestivalMobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DF5B42B8CC62B00A07876 /* FestivalMobileUITestsLaunchTests.swift */; };
 		B7F617BB2BA18CA100235E4F /* RechercheJeuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617BA2BA18CA100235E4F /* RechercheJeuViewModel.swift */; };
+		B7F617BD2BA1A49300235E4F /* InscriptionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617BC2BA1A49300235E4F /* InscriptionAnimation.swift */; };
+		B7F617BF2BA1A4E800235E4F /* InscriptionPoste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617BE2BA1A4E800235E4F /* InscriptionPoste.swift */; };
+		B7F617C22BA1A84D00235E4F /* SelectionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617C12BA1A84D00235E4F /* SelectionAnimation.swift */; };
+		B7F617C42BA1A89400235E4F /* SelectionAnimationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617C32BA1A89400235E4F /* SelectionAnimationVM.swift */; };
+		B7F617C72BA1A9D600235E4F /* MultiSelectList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617C62BA1A9D600235E4F /* MultiSelectList.swift */; };
+		B7F617CA2BA1AA5800235E4F /* MultiSelectObjectVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617C92BA1AA5800235E4F /* MultiSelectObjectVM.swift */; };
+		B7F617CC2BA1AAC300235E4F /* MultiSelectListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617CB2BA1AAC300235E4F /* MultiSelectListVM.swift */; };
+		B7F617CE2BA1AF0600235E4F /* ListItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617CD2BA1AF0600235E4F /* ListItemProtocol.swift */; };
+		B7F617D02BA1B20F00235E4F /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617CF2BA1B20F00235E4F /* SearchBarView.swift */; };
+		B7F617D22BA1B23700235E4F /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617D12BA1B23700235E4F /* ListRowView.swift */; };
+		B7F617D62BA1C2E400235E4F /* SelectionPosteVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617D52BA1C2E400235E4F /* SelectionPosteVM.swift */; };
+		B7F617D92BA1C47400235E4F /* SelectionPoste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617D82BA1C47400235E4F /* SelectionPoste.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +68,18 @@
 		B77DF5B22B8CC62B00A07876 /* FestivalMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalMobileUITests.swift; sourceTree = "<group>"; };
 		B77DF5B42B8CC62B00A07876 /* FestivalMobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalMobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B7F617BA2BA18CA100235E4F /* RechercheJeuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechercheJeuViewModel.swift; sourceTree = "<group>"; };
+		B7F617BC2BA1A49300235E4F /* InscriptionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionAnimation.swift; sourceTree = "<group>"; };
+		B7F617BE2BA1A4E800235E4F /* InscriptionPoste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionPoste.swift; sourceTree = "<group>"; };
+		B7F617C12BA1A84D00235E4F /* SelectionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionAnimation.swift; sourceTree = "<group>"; };
+		B7F617C32BA1A89400235E4F /* SelectionAnimationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionAnimationVM.swift; sourceTree = "<group>"; };
+		B7F617C62BA1A9D600235E4F /* MultiSelectList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectList.swift; sourceTree = "<group>"; };
+		B7F617C92BA1AA5800235E4F /* MultiSelectObjectVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectObjectVM.swift; sourceTree = "<group>"; };
+		B7F617CB2BA1AAC300235E4F /* MultiSelectListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSelectListVM.swift; sourceTree = "<group>"; };
+		B7F617CD2BA1AF0600235E4F /* ListItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemProtocol.swift; sourceTree = "<group>"; };
+		B7F617CF2BA1B20F00235E4F /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		B7F617D12BA1B23700235E4F /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		B7F617D52BA1C2E400235E4F /* SelectionPosteVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPosteVM.swift; sourceTree = "<group>"; };
+		B7F617D82BA1C47400235E4F /* SelectionPoste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPoste.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +140,7 @@
 		B77DF5962B8CC62800A07876 /* FestivalMobile */ = {
 			isa = PBXGroup;
 			children = (
+				B7F617C52BA1A9C700235E4F /* Components */,
 				B77DF5C32B8CC65E00A07876 /* Views */,
 				B77DF5C22B8CC65000A07876 /* ViewModels */,
 				B77DF5C12B8CC64700A07876 /* Models */,
@@ -162,7 +187,9 @@
 		B77DF5C22B8CC65000A07876 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B7F617B92BA18C8F00235E4F /* Filtre */,
+				B7F617D42BA1C2C900235E4F /* InscriptionPoste */,
+				B7F617D32BA1C2AB00235E4F /* InscriptionAnimation */,
+				B7F617C82BA1AA4900235E4F /* Components */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -170,7 +197,8 @@
 		B77DF5C32B8CC65E00A07876 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B70CBC472BA0B1800025C340 /* Filtre */,
+				B7F617D72BA1C46200235E4F /* InscriptionPoste */,
+				B7F617C02BA1A83700235E4F /* InscriptionAnimation */,
 				B70CBC3F2BA096920025C340 /* InscriptionListeCreneaux.swift */,
 				B70CBC412BA09E1C0025C340 /* InscriptionCreneau.swift */,
 			);
@@ -183,6 +211,62 @@
 				B7F617BA2BA18CA100235E4F /* RechercheJeuViewModel.swift */,
 			);
 			path = Filtre;
+			sourceTree = "<group>";
+		};
+		B7F617C02BA1A83700235E4F /* InscriptionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B70CBC472BA0B1800025C340 /* Filtre */,
+				B7F617BC2BA1A49300235E4F /* InscriptionAnimation.swift */,
+				B7F617C12BA1A84D00235E4F /* SelectionAnimation.swift */,
+			);
+			path = InscriptionAnimation;
+			sourceTree = "<group>";
+		};
+		B7F617C52BA1A9C700235E4F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B7F617C62BA1A9D600235E4F /* MultiSelectList.swift */,
+				B7F617CF2BA1B20F00235E4F /* SearchBarView.swift */,
+				B7F617D12BA1B23700235E4F /* ListRowView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B7F617C82BA1AA4900235E4F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B7F617C92BA1AA5800235E4F /* MultiSelectObjectVM.swift */,
+				B7F617CB2BA1AAC300235E4F /* MultiSelectListVM.swift */,
+				B7F617CD2BA1AF0600235E4F /* ListItemProtocol.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B7F617D32BA1C2AB00235E4F /* InscriptionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B7F617C32BA1A89400235E4F /* SelectionAnimationVM.swift */,
+				B7F617B92BA18C8F00235E4F /* Filtre */,
+			);
+			path = InscriptionAnimation;
+			sourceTree = "<group>";
+		};
+		B7F617D42BA1C2C900235E4F /* InscriptionPoste */ = {
+			isa = PBXGroup;
+			children = (
+				B7F617D52BA1C2E400235E4F /* SelectionPosteVM.swift */,
+			);
+			path = InscriptionPoste;
+			sourceTree = "<group>";
+		};
+		B7F617D72BA1C46200235E4F /* InscriptionPoste */ = {
+			isa = PBXGroup;
+			children = (
+				B7F617BE2BA1A4E800235E4F /* InscriptionPoste.swift */,
+				B7F617D82BA1C47400235E4F /* SelectionPoste.swift */,
+			);
+			path = InscriptionPoste;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,13 +400,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				B70CBC422BA09E1C0025C340 /* InscriptionCreneau.swift in Sources */,
+				B7F617D62BA1C2E400235E4F /* SelectionPosteVM.swift in Sources */,
+				B7F617BF2BA1A4E800235E4F /* InscriptionPoste.swift in Sources */,
 				B70CBC402BA096920025C340 /* InscriptionListeCreneaux.swift in Sources */,
 				B70CBC492BA0B1940025C340 /* RechercheJeux.swift in Sources */,
 				B77DF59A2B8CC62800A07876 /* ContentView.swift in Sources */,
 				B70CBC462BA0AFD00025C340 /* ExhaustiveFiltre.swift in Sources */,
+				B7F617CC2BA1AAC300235E4F /* MultiSelectListVM.swift in Sources */,
+				B7F617D92BA1C47400235E4F /* SelectionPoste.swift in Sources */,
+				B7F617CA2BA1AA5800235E4F /* MultiSelectObjectVM.swift in Sources */,
+				B7F617BD2BA1A49300235E4F /* InscriptionAnimation.swift in Sources */,
 				B70CBC442BA0ACC30025C340 /* FiltreJeux.swift in Sources */,
+				B7F617C22BA1A84D00235E4F /* SelectionAnimation.swift in Sources */,
+				B7F617C42BA1A89400235E4F /* SelectionAnimationVM.swift in Sources */,
 				B77DF5982B8CC62800A07876 /* FestivalMobileApp.swift in Sources */,
 				B7F617BB2BA18CA100235E4F /* RechercheJeuViewModel.swift in Sources */,
+				B7F617CE2BA1AF0600235E4F /* ListItemProtocol.swift in Sources */,
+				B7F617D02BA1B20F00235E4F /* SearchBarView.swift in Sources */,
+				B7F617C72BA1A9D600235E4F /* MultiSelectList.swift in Sources */,
+				B7F617D22BA1B23700235E4F /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

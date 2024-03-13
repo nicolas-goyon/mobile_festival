@@ -14,43 +14,16 @@ struct InscriptionCreneau: View {
     @State private var searchText = ""
     
     var body: some View {
-        NavigationStack{
-            VStack{
-                TabView{
-                    VStack{
-                        List{
-                            Text("Esplanade 1")
-                            Text("Esplanade 2")
-                            Text("Esplanade 3")
-                            Text("Sud-Est")
-                            Text("Sud-Ouest")
-                            Text("Nord-Est")
-                            Text("Nord-Ouest")
-                        }
-                    }
-                    .tabItem {
-                        Image(systemName: "gamecontroller")
-                        Text("Animations")
-                    }
-                    VStack{
-                        List{
-                            Text("Cuisine")
-                            Text("Bar")
-                            Text("Buvette")
-                            Text("Accueil bénévoles")
-                            Text("Accueil public")
-                        }
-                    }
-                    .tabItem {
-                        Image(systemName: "fork.knife")
-                        Text("Postes")
-                    }
-                    FiltreJeux()
-                        .tabItem{
-                            Image(systemName: "magnifyingglass")
-                            Text("Filtre")
-                        }
-                }
+        TabView{
+            InscriptionAnimation()
+            .tabItem {
+                Image(systemName: "gamecontroller")
+                Text("Animations")
+            }
+            InscriptionPoste()
+            .tabItem {
+                Image(systemName: "fork.knife")
+                Text("Postes")
             }
         }
         .navigationTitle("Inscription Créneau")

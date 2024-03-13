@@ -14,7 +14,7 @@ struct InscriptionListeCreneaux: View {
     
     var body: some View {
         NavigationStack{
-            VStack{
+            Form{
                 Picker("Jour", selection: $jour){
                     Text("Jour 1").tag(0)
                     Text("Jour 2").tag(1)
@@ -24,6 +24,9 @@ struct InscriptionListeCreneaux: View {
                 List{
                     NavigationLink(destination: InscriptionCreneau()){
                         Text("8h")
+                        Text("Poste : Cuisine...")
+                            .font(.footnote)
+                            .foregroundColor(.gray)
                     }
                     NavigationLink(destination: InscriptionCreneau()){
                         Text("10h")
@@ -48,7 +51,7 @@ struct InscriptionListeCreneaux: View {
                 
                 // Bouton s'inscrire
                 Button(action: {}, label: {
-                    Text("S'inscrire")
+                    Text("Validation inscription")
                 })
             }
             .navigationTitle("Festival 2024")
