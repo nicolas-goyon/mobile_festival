@@ -13,7 +13,7 @@ struct InscriptionListeCreneaux: View {
     
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
             VStack{
                 Picker("Jour", selection: $jour){
                     Text("Jour 1").tag(0)
@@ -21,16 +21,6 @@ struct InscriptionListeCreneaux: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 
-                //            VStack{
-                //                Text("8h")
-                //                Text("10h")
-                //                Text("12h")
-                //                Text("14h")
-                //                Text("17h")
-                //                Text("20h")
-                //                Text("22h")
-                //            }
-                // Each text is a button for going into another view
                 List{
                     NavigationLink(destination: InscriptionCreneau()){
                         Text("8h")

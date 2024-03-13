@@ -19,6 +19,7 @@
 		B77DF5A92B8CC62A00A07876 /* FestivalMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DF5A82B8CC62A00A07876 /* FestivalMobileTests.swift */; };
 		B77DF5B32B8CC62B00A07876 /* FestivalMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DF5B22B8CC62B00A07876 /* FestivalMobileUITests.swift */; };
 		B77DF5B52B8CC62B00A07876 /* FestivalMobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DF5B42B8CC62B00A07876 /* FestivalMobileUITestsLaunchTests.swift */; };
+		B7F617BB2BA18CA100235E4F /* RechercheJeuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617BA2BA18CA100235E4F /* RechercheJeuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B77DF5AE2B8CC62B00A07876 /* FestivalMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FestivalMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77DF5B22B8CC62B00A07876 /* FestivalMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalMobileUITests.swift; sourceTree = "<group>"; };
 		B77DF5B42B8CC62B00A07876 /* FestivalMobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalMobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7F617BA2BA18CA100235E4F /* RechercheJeuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechercheJeuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		B77DF5C22B8CC65000A07876 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B7F617B92BA18C8F00235E4F /* Filtre */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -172,6 +175,14 @@
 				B70CBC412BA09E1C0025C340 /* InscriptionCreneau.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		B7F617B92BA18C8F00235E4F /* Filtre */ = {
+			isa = PBXGroup;
+			children = (
+				B7F617BA2BA18CA100235E4F /* RechercheJeuViewModel.swift */,
+			);
+			path = Filtre;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -311,6 +322,7 @@
 				B70CBC462BA0AFD00025C340 /* ExhaustiveFiltre.swift in Sources */,
 				B70CBC442BA0ACC30025C340 /* FiltreJeux.swift in Sources */,
 				B77DF5982B8CC62800A07876 /* FestivalMobileApp.swift in Sources */,
+				B7F617BB2BA18CA100235E4F /* RechercheJeuViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

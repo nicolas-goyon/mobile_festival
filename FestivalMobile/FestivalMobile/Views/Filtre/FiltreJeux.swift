@@ -16,7 +16,7 @@ struct FiltreJeux: View {
     @State var exhaustif: Bool = true
     
     var body: some View {
-        NavigationView{
+        NavigationStack{
             Form{
                 Section(header: Text("Filtrer par jeux")){
                     Toggle(isOn:  $filtre, label: {
@@ -25,14 +25,15 @@ struct FiltreJeux: View {
                 }
                 
                 Section(header: Text("Filtrer par type de jeux")){
-                    NavigationLink(destination: Text("Jeux de plateau")){
+                    NavigationLink(destination: RechercheJeux()){
                         Text("Jeux de plateau")
                     }
                     NavigationLink(destination: ExhaustiveFiltre(exhaustif: $exhaustif)){
                         Text("Filtre exhaustif")
                     }
                 }
-            }.navigationTitle("Filtre")
+                .disabled(!filtre)
+            }
             
             // filtre exhaustif
             

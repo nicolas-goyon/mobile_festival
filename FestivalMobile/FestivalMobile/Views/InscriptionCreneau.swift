@@ -14,39 +14,45 @@ struct InscriptionCreneau: View {
     @State private var searchText = ""
     
     var body: some View {
-        VStack{
-            TabView{
-                VStack{
-                    List{
-                        Text("Esplanade 1")
-                        Text("Esplanade 2")
-                        Text("Esplanade 3")
-                        Text("Sud-Est")
-                        Text("Sud-Ouest")
-                        Text("Nord-Est")
-                        Text("Nord-Ouest")
+        NavigationStack{
+            VStack{
+                TabView{
+                    VStack{
+                        List{
+                            Text("Esplanade 1")
+                            Text("Esplanade 2")
+                            Text("Esplanade 3")
+                            Text("Sud-Est")
+                            Text("Sud-Ouest")
+                            Text("Nord-Est")
+                            Text("Nord-Ouest")
+                        }
                     }
-                    .searchable(text: $searchText)
-                }
-                .tabItem {
-                    Image(systemName: "gamecontroller")
-                    Text("Animations")
-                }
-                VStack{
-                    List{
-                        Text("Cuisine")
-                        Text("Bar")
-                        Text("Buvette")
-                        Text("Accueil bénévoles")
-                        Text("Accueil public")
+                    .tabItem {
+                        Image(systemName: "gamecontroller")
+                        Text("Animations")
                     }
-                    .searchable(text: $searchText)
-                }
-                .tabItem {
-                    Image(systemName: "fork.knife")
-                    Text("Postes")
+                    VStack{
+                        List{
+                            Text("Cuisine")
+                            Text("Bar")
+                            Text("Buvette")
+                            Text("Accueil bénévoles")
+                            Text("Accueil public")
+                        }
+                    }
+                    .tabItem {
+                        Image(systemName: "fork.knife")
+                        Text("Postes")
+                    }
+                    FiltreJeux()
+                        .tabItem{
+                            Image(systemName: "magnifyingglass")
+                            Text("Filtre")
+                        }
                 }
             }
         }
+        .navigationTitle("Inscription Créneau")
     }
 }

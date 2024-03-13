@@ -24,7 +24,7 @@ struct ExhaustiveFiltre: View {
                 })
                 Text("Le filtre exclusif des jeux permet de filtrer les activité ayant uniquement les jeux sélectionnés, n’ayant donc pas de jeux n’étant pas sélectionné. \n\nAvoir cette option désactivée vous permet d’avoir accès à des activités ayant des jeux que vous n’avez pas filtré (mais au moins un jeu sélectionné)")
             }
-        }.navigationTitle("Filtre")
+        }
     }
 }
     
