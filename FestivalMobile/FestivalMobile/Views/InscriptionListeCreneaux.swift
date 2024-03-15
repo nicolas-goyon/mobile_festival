@@ -10,7 +10,27 @@ import SwiftUI
 struct InscriptionListeCreneaux: View {
     
     @State var jour: Int = 0
+    @StateObject var viewModel = MultiSelectListVM<SelectionPosteVM>(data: [
+        SelectionPosteVM(poste: "Cuisine"),
+        SelectionPosteVM(poste: "Vente"),
+        SelectionPosteVM(poste: "Bar"),
+        SelectionPosteVM(poste: "Accueil public"),
+        SelectionPosteVM(poste: "Accueil bénévoles"),
+        SelectionPosteVM(poste: "Tombola"),
+        SelectionPosteVM(poste: "Buvette")
+    ])
     
+    @StateObject var animations = MultiSelectListVM(data: [
+        SelectionAnimationVM(animation: "Esplanade 1"),
+        SelectionAnimationVM(animation: "Esplanade 2"),
+        SelectionAnimationVM(animation: "Esplanade 3"),
+        SelectionAnimationVM(animation: "Sud-Est"),
+        SelectionAnimationVM(animation: "Sud-Ouest"),
+        SelectionAnimationVM(animation: "Nord-Est"),
+        SelectionAnimationVM(animation: "Nord-Ouest")
+    ])
+    
+    @State private var selectedItems: [MultiSelectObjectVM<SelectionPosteVM>] = []
     
     var body: some View {
         NavigationStack{
