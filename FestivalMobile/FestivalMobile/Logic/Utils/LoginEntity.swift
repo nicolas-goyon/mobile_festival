@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct LoginEntity : Decodable {
+    let token : String
+}

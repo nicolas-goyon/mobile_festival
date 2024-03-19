@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E653EAE2BA9BE84002E946E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EAD2BA9BE84002E946E /* LoginView.swift */; };
+		2E653EB02BA9C1DE002E946E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EAF2BA9C1DE002E946E /* AuthService.swift */; };
+		2E653EB72BA9D67A002E946E /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EB62BA9D67A002E946E /* JSONHelper.swift */; };
+		2E653EB92BA9D697002E946E /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EB82BA9D697002E946E /* LoginEntity.swift */; };
+		2E653EBB2BA9D6A8002E946E /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EBA2BA9D6A8002E946E /* LoginDTO.swift */; };
+		2E653EBD2BA9DAA5002E946E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EBC2BA9DAA5002E946E /* LoginViewModel.swift */; };
 		B70CBC402BA096920025C340 /* InscriptionListeCreneaux.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70CBC3F2BA096920025C340 /* InscriptionListeCreneaux.swift */; };
 		B70CBC422BA09E1C0025C340 /* InscriptionCreneau.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70CBC412BA09E1C0025C340 /* InscriptionCreneau.swift */; };
 		B70CBC442BA0ACC30025C340 /* FiltreJeux.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70CBC432BA0ACC30025C340 /* FiltreJeux.swift */; };
@@ -40,6 +46,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E653EAD2BA9BE84002E946E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2E653EAF2BA9C1DE002E946E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		2E653EB62BA9D67A002E946E /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
+		2E653EB82BA9D697002E946E /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
+		2E653EBA2BA9D6A8002E946E /* LoginDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
+		2E653EBC2BA9DAA5002E946E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B70CBC3F2BA096920025C340 /* InscriptionListeCreneaux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionListeCreneaux.swift; sourceTree = "<group>"; };
 		B70CBC412BA09E1C0025C340 /* InscriptionCreneau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionCreneau.swift; sourceTree = "<group>"; };
 		B70CBC432BA0ACC30025C340 /* FiltreJeux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltreJeux.swift; sourceTree = "<group>"; };
@@ -83,6 +95,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E653EB32BA9D5EC002E946E /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				2E653EB52BA9D633002E946E /* Services */,
+				2E653EB42BA9D623002E946E /* Utils */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		2E653EB42BA9D623002E946E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2E653EB62BA9D67A002E946E /* JSONHelper.swift */,
+				2E653EB82BA9D697002E946E /* LoginEntity.swift */,
+				2E653EBA2BA9D6A8002E946E /* LoginDTO.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2E653EB52BA9D633002E946E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2E653EAF2BA9C1DE002E946E /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		B70CBC472BA0B1800025C340 /* Filtre */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +155,7 @@
 		B77DF5962B8CC62800A07876 /* FestivalMobile */ = {
 			isa = PBXGroup;
 			children = (
+				2E653EB32BA9D5EC002E946E /* Logic */,
 				B77DF5C32B8CC65E00A07876 /* Views */,
 				B77DF5C22B8CC65000A07876 /* ViewModels */,
 				B77DF5C12B8CC64700A07876 /* Models */,
@@ -163,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				B7F617B92BA18C8F00235E4F /* Filtre */,
+				2E653EBC2BA9DAA5002E946E /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -170,6 +211,7 @@
 		B77DF5C32B8CC65E00A07876 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E653EAD2BA9BE84002E946E /* LoginView.swift */,
 				B70CBC472BA0B1800025C340 /* Filtre */,
 				B70CBC3F2BA096920025C340 /* InscriptionListeCreneaux.swift */,
 				B70CBC412BA09E1C0025C340 /* InscriptionCreneau.swift */,
@@ -249,7 +291,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					B77DF5932B8CC62800A07876 = {
 						CreatedOnToolsVersion = 14.2;
@@ -317,10 +359,16 @@
 			files = (
 				B70CBC422BA09E1C0025C340 /* InscriptionCreneau.swift in Sources */,
 				B70CBC402BA096920025C340 /* InscriptionListeCreneaux.swift in Sources */,
+				2E653EB92BA9D697002E946E /* LoginEntity.swift in Sources */,
+				2E653EBB2BA9D6A8002E946E /* LoginDTO.swift in Sources */,
 				B70CBC492BA0B1940025C340 /* RechercheJeux.swift in Sources */,
+				2E653EAE2BA9BE84002E946E /* LoginView.swift in Sources */,
+				2E653EBD2BA9DAA5002E946E /* LoginViewModel.swift in Sources */,
 				B77DF59A2B8CC62800A07876 /* ContentView.swift in Sources */,
 				B70CBC462BA0AFD00025C340 /* ExhaustiveFiltre.swift in Sources */,
 				B70CBC442BA0ACC30025C340 /* FiltreJeux.swift in Sources */,
+				2E653EB02BA9C1DE002E946E /* AuthService.swift in Sources */,
+				2E653EB72BA9D67A002E946E /* JSONHelper.swift in Sources */,
 				B77DF5982B8CC62800A07876 /* FestivalMobileApp.swift in Sources */,
 				B7F617BB2BA18CA100235E4F /* RechercheJeuViewModel.swift in Sources */,
 			);
@@ -363,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -395,6 +444,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -423,6 +473,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -455,6 +506,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

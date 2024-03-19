@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct LoginDTO : Codable, CustomStringConvertible {
+    let email : String
+    let password : String
+    var description: String {
+        return "email: \(self.email) - password: \(self.password)"
+    }
+}

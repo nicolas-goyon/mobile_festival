@@ -14,10 +14,9 @@ class AuthService{
         let httpresponse = response as! HTTPURLResponse // le bon type
         if httpresponse.statusCode == 201{ // tout s'est bien passé
             guard let decoded : LoginEntity = await JSONHelper.decode(data: data) else { // utilisation de notre décodeur
-            throw NSError()// mauvaise récupération de données
-        }
+                fatalError()// mauvaise récupération de données
+            }
             print("decoded :", decoded)
-        // conversion éventuelle du DTO decoded en instance Model
         }
         else{
             print("Error \(httpresponse.statusCode): \(HTTPURLResponse.localizedString(forStatusCode: httpresponse.statusCode))") // print à éviter dans une app !
