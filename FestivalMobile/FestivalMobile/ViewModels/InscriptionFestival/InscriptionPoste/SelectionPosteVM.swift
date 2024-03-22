@@ -10,10 +10,11 @@ import Foundation
 class SelectionPosteVM: ListItemProtocol {
     
     let id = UUID()
-    public private(set) var poste : String
-    public var name: String { return poste }
+    public private(set) var poste : Poste
+    public var name: String { return poste.nom }
     
-    init(poste: String){
+    
+    init(poste: Poste){
         self.poste = poste
     }
     

@@ -10,23 +10,21 @@ import SwiftUI
 
 struct InscriptionPoste : View {
     
-    @StateObject var viewModel = MultiSelectListVM<SelectionPosteVM>(data: [
-        SelectionPosteVM(poste: "Cuisine"),
-        SelectionPosteVM(poste: "Vente"),
-        SelectionPosteVM(poste: "Bar"),
-        SelectionPosteVM(poste: "Accueil public"),
-        SelectionPosteVM(poste: "Accueil bénévoles"),
-        SelectionPosteVM(poste: "Tombola"),
-        SelectionPosteVM(poste: "Buvette")
-    ])
     
-    @State private var selectedItems: [MultiSelectObjectVM<SelectionPosteVM>] = []
+    @ObservedObject var viewModel : CreneauChoixVM
+    
+    var animations: MultiSelectListVM<SelectionAnimationVM> {
+        viewModel.getAnimations()
+    }
+    
+    
+    
     
     var postesSelectionneText: String {
-        if selectedItems.count == 0 {
+        if viewModel.choixPostes.count == 0 {
             return "Aucun poste sélectionné"
         }
-        var text = selectedItems.map({ $0.name }).joined(separator: ", ")
+        var text = viewModel.choixPostes.map({ $0.name }).joined(separator: ", ")
         let maxSize = 25
         if text.count > maxSize {
             let index = text.index(text.startIndex, offsetBy: maxSize)
@@ -39,7 +37,7 @@ struct InscriptionPoste : View {
     var body: some View{
         Form{
             Section{
-                NavigationLink(destination: SelectionPoste(postes: viewModel, selectedItems: $selectedItems).navigationTitle("Sélection des postes") ){
+                NavigationLink(destination: SelectionPoste(postes: viewModel.getPostes(), selectedItems: $viewModel.choixPostes).navigationTitle("Sélection des postes") ){
                     Text("Postes")
                 }
                 Text(postesSelectionneText)

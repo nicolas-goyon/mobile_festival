@@ -7,7 +7,15 @@
 
 import Foundation
 
-class MultiSelectObjectVM<T : ListItemProtocol>: Identifiable{
+class MultiSelectObjectVM<T : ListItemProtocol>: Identifiable, Hashable{
+    static func == (lhs: MultiSelectObjectVM<T>, rhs: MultiSelectObjectVM<T>) -> Bool {
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
     let id = UUID()
     public private(set) var name : String
     public var estSelectionne: Bool

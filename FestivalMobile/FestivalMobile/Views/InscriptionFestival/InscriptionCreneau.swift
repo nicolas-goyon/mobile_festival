@@ -12,15 +12,16 @@ struct InscriptionCreneau: View {
     
     @State var estPoste: Int = 0
     @State private var searchText = ""
+    @ObservedObject var viewModel : CreneauChoixVM
     
     var body: some View {
         TabView{
-            InscriptionAnimation()
+            InscriptionAnimation(viewModel: viewModel)
             .tabItem {
                 Image(systemName: "gamecontroller")
                 Text("Animations")
             }
-            InscriptionPoste()
+            InscriptionPoste(viewModel: viewModel)
             .tabItem {
                 Image(systemName: "fork.knife")
                 Text("Postes")

@@ -20,6 +20,14 @@
 		B77DF5A92B8CC62A00A07876 /* FestivalMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DF5A82B8CC62A00A07876 /* FestivalMobileTests.swift */; };
 		B77DF5B32B8CC62B00A07876 /* FestivalMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DF5B22B8CC62B00A07876 /* FestivalMobileUITests.swift */; };
 		B77DF5B52B8CC62B00A07876 /* FestivalMobileUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DF5B42B8CC62B00A07876 /* FestivalMobileUITestsLaunchTests.swift */; };
+		B7A2E2922BADC35F00D65DCA /* TypeChoix.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E2912BADC35F00D65DCA /* TypeChoix.swift */; };
+		B7A2E2952BADC38800D65DCA /* CreneauChoixVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E2942BADC38800D65DCA /* CreneauChoixVM.swift */; };
+		B7A2E2972BADCF7C00D65DCA /* Festival.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E2962BADCF7C00D65DCA /* Festival.swift */; };
+		B7A2E2992BADD04800D65DCA /* Creneau.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E2982BADD04800D65DCA /* Creneau.swift */; };
+		B7A2E29B2BADD08900D65DCA /* Jeu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E29A2BADD08900D65DCA /* Jeu.swift */; };
+		B7A2E29D2BADD0A100D65DCA /* Poste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E29C2BADD0A100D65DCA /* Poste.swift */; };
+		B7A2E29F2BADD0B400D65DCA /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E29E2BADD0B400D65DCA /* Animation.swift */; };
+		B7A2E2A12BADDEED00D65DCA /* SelectionPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E2A02BADDEED00D65DCA /* SelectionPreview.swift */; };
 		B7F617BB2BA18CA100235E4F /* RechercheJeuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617BA2BA18CA100235E4F /* RechercheJeuViewModel.swift */; };
 		B7F617BD2BA1A49300235E4F /* InscriptionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617BC2BA1A49300235E4F /* InscriptionAnimation.swift */; };
 		B7F617BF2BA1A4E800235E4F /* InscriptionPoste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617BE2BA1A4E800235E4F /* InscriptionPoste.swift */; };
@@ -69,6 +77,14 @@
 		B77DF5AE2B8CC62B00A07876 /* FestivalMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FestivalMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77DF5B22B8CC62B00A07876 /* FestivalMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalMobileUITests.swift; sourceTree = "<group>"; };
 		B77DF5B42B8CC62B00A07876 /* FestivalMobileUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalMobileUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B7A2E2912BADC35F00D65DCA /* TypeChoix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeChoix.swift; sourceTree = "<group>"; };
+		B7A2E2942BADC38800D65DCA /* CreneauChoixVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreneauChoixVM.swift; sourceTree = "<group>"; };
+		B7A2E2962BADCF7C00D65DCA /* Festival.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Festival.swift; sourceTree = "<group>"; };
+		B7A2E2982BADD04800D65DCA /* Creneau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creneau.swift; sourceTree = "<group>"; };
+		B7A2E29A2BADD08900D65DCA /* Jeu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jeu.swift; sourceTree = "<group>"; };
+		B7A2E29C2BADD0A100D65DCA /* Poste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poste.swift; sourceTree = "<group>"; };
+		B7A2E29E2BADD0B400D65DCA /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		B7A2E2A02BADDEED00D65DCA /* SelectionPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPreview.swift; sourceTree = "<group>"; };
 		B7F617BA2BA18CA100235E4F /* RechercheJeuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechercheJeuViewModel.swift; sourceTree = "<group>"; };
 		B7F617BC2BA1A49300235E4F /* InscriptionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionAnimation.swift; sourceTree = "<group>"; };
 		B7F617BE2BA1A4E800235E4F /* InscriptionPoste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionPoste.swift; sourceTree = "<group>"; };
@@ -182,6 +198,11 @@
 		B77DF5C12B8CC64700A07876 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				B7A2E2962BADCF7C00D65DCA /* Festival.swift */,
+				B7A2E2982BADD04800D65DCA /* Creneau.swift */,
+				B7A2E29A2BADD08900D65DCA /* Jeu.swift */,
+				B7A2E29C2BADD0A100D65DCA /* Poste.swift */,
+				B7A2E29E2BADD0B400D65DCA /* Animation.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -189,10 +210,7 @@
 		B77DF5C22B8CC65000A07876 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B7F617D42BA1C2C900235E4F /* InscriptionPoste */,
-				B7F617D32BA1C2AB00235E4F /* InscriptionAnimation */,
-				B7F617C82BA1AA4900235E4F /* Components */,
-				B71A7CA02BA48CB7003F574A /* InscriptionCreneauxVM.swift */,
+				B7A2E28F2BADC2DB00D65DCA /* InscriptionFestival */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -200,12 +218,34 @@
 		B77DF5C32B8CC65E00A07876 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B7A2E2902BADC33000D65DCA /* InscriptionFestival */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B7A2E28F2BADC2DB00D65DCA /* InscriptionFestival */ = {
+			isa = PBXGroup;
+			children = (
+				B71A7CA02BA48CB7003F574A /* InscriptionCreneauxVM.swift */,
+				B7F617C82BA1AA4900235E4F /* Components */,
+				B7F617D32BA1C2AB00235E4F /* InscriptionAnimation */,
+				B7F617D42BA1C2C900235E4F /* InscriptionPoste */,
+				B7A2E2912BADC35F00D65DCA /* TypeChoix.swift */,
+				B7A2E2942BADC38800D65DCA /* CreneauChoixVM.swift */,
+			);
+			path = InscriptionFestival;
+			sourceTree = "<group>";
+		};
+		B7A2E2902BADC33000D65DCA /* InscriptionFestival */ = {
+			isa = PBXGroup;
+			children = (
 				B7F617D72BA1C46200235E4F /* InscriptionPoste */,
 				B7F617C02BA1A83700235E4F /* InscriptionAnimation */,
 				B70CBC3F2BA096920025C340 /* InscriptionListeCreneaux.swift */,
 				B70CBC412BA09E1C0025C340 /* InscriptionCreneau.swift */,
+				B7A2E2A02BADDEED00D65DCA /* SelectionPreview.swift */,
 			);
-			path = Views;
+			path = InscriptionFestival;
 			sourceTree = "<group>";
 		};
 		B7F617B92BA18C8F00235E4F /* Filtre */ = {
@@ -403,25 +443,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				B70CBC422BA09E1C0025C340 /* InscriptionCreneau.swift in Sources */,
+				B7A2E2952BADC38800D65DCA /* CreneauChoixVM.swift in Sources */,
 				B7F617D62BA1C2E400235E4F /* SelectionPosteVM.swift in Sources */,
 				B7F617BF2BA1A4E800235E4F /* InscriptionPoste.swift in Sources */,
 				B70CBC402BA096920025C340 /* InscriptionListeCreneaux.swift in Sources */,
+				B7A2E2972BADCF7C00D65DCA /* Festival.swift in Sources */,
 				B70CBC492BA0B1940025C340 /* RechercheJeux.swift in Sources */,
 				B77DF59A2B8CC62800A07876 /* ContentView.swift in Sources */,
 				B71A7CA12BA48CB7003F574A /* InscriptionCreneauxVM.swift in Sources */,
+				B7A2E2992BADD04800D65DCA /* Creneau.swift in Sources */,
 				B70CBC462BA0AFD00025C340 /* ExhaustiveFiltre.swift in Sources */,
 				B7F617CC2BA1AAC300235E4F /* MultiSelectListVM.swift in Sources */,
 				B7F617D92BA1C47400235E4F /* SelectionPoste.swift in Sources */,
 				B7F617CA2BA1AA5800235E4F /* MultiSelectObjectVM.swift in Sources */,
+				B7A2E29B2BADD08900D65DCA /* Jeu.swift in Sources */,
 				B7F617BD2BA1A49300235E4F /* InscriptionAnimation.swift in Sources */,
 				B70CBC442BA0ACC30025C340 /* FiltreJeux.swift in Sources */,
 				B7F617C22BA1A84D00235E4F /* SelectionAnimation.swift in Sources */,
 				B7F617C42BA1A89400235E4F /* SelectionAnimationVM.swift in Sources */,
 				B77DF5982B8CC62800A07876 /* FestivalMobileApp.swift in Sources */,
+				B7A2E29D2BADD0A100D65DCA /* Poste.swift in Sources */,
 				B7F617BB2BA18CA100235E4F /* RechercheJeuViewModel.swift in Sources */,
+				B7A2E2922BADC35F00D65DCA /* TypeChoix.swift in Sources */,
 				B7F617CE2BA1AF0600235E4F /* ListItemProtocol.swift in Sources */,
+				B7A2E2A12BADDEED00D65DCA /* SelectionPreview.swift in Sources */,
 				B7F617D02BA1B20F00235E4F /* SearchBarView.swift in Sources */,
 				B7F617C72BA1A9D600235E4F /* MultiSelectList.swift in Sources */,
+				B7A2E29F2BADD0B400D65DCA /* Animation.swift in Sources */,
 				B7F617D22BA1B23700235E4F /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

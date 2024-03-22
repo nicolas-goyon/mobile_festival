@@ -8,10 +8,11 @@
 import Foundation
 class SelectionAnimationVM: ListItemProtocol{
     let id = UUID()
-    public private(set) var animation : String
-    public var name: String { return animation }
+    public private(set) var animation : Animation
+    public var name: String { return animation.nom }
     
-    init(animation: String){
+    
+    init(animation: Animation){
         self.animation = animation
     }
 }
