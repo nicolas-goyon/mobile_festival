@@ -12,6 +12,7 @@ struct FestivalMobileApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//            Tests()
         }
     }
 }
