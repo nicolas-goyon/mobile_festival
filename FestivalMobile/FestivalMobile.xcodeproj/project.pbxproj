@@ -22,9 +22,6 @@
 		2E653EBD2BA9DAA5002E946E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EBC2BA9DAA5002E946E /* LoginViewModel.swift */; };
 		B70CBC402BA096920025C340 /* InscriptionListeCreneaux.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70CBC3F2BA096920025C340 /* InscriptionListeCreneaux.swift */; };
 		B70CBC422BA09E1C0025C340 /* InscriptionCreneau.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70CBC412BA09E1C0025C340 /* InscriptionCreneau.swift */; };
-		B70CBC442BA0ACC30025C340 /* FiltreJeux.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70CBC432BA0ACC30025C340 /* FiltreJeux.swift */; };
-		B70CBC462BA0AFD00025C340 /* ExhaustiveFiltre.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70CBC452BA0AFD00025C340 /* ExhaustiveFiltre.swift */; };
-		B70CBC492BA0B1940025C340 /* RechercheJeux.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70CBC482BA0B1940025C340 /* RechercheJeux.swift */; };
 		B71A7CA12BA48CB7003F574A /* InscriptionCreneauxVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71A7CA02BA48CB7003F574A /* InscriptionCreneauxVM.swift */; };
 		B73F6EB12BB2ED8F00DC4007 /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F6EB02BB2ED8F00DC4007 /* ObservableArray.swift */; };
 		B73F6EB32BB2EE8300DC4007 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F6EB22BB2EE8300DC4007 /* Tests.swift */; };
@@ -43,7 +40,6 @@
 		B7A2E29D2BADD0A100D65DCA /* Poste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E29C2BADD0A100D65DCA /* Poste.swift */; };
 		B7A2E29F2BADD0B400D65DCA /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E29E2BADD0B400D65DCA /* Animation.swift */; };
 		B7A2E2A12BADDEED00D65DCA /* SelectionPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E2A02BADDEED00D65DCA /* SelectionPreview.swift */; };
-		B7F617BB2BA18CA100235E4F /* RechercheJeuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617BA2BA18CA100235E4F /* RechercheJeuViewModel.swift */; };
 		B7F617BD2BA1A49300235E4F /* InscriptionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617BC2BA1A49300235E4F /* InscriptionAnimation.swift */; };
 		B7F617BF2BA1A4E800235E4F /* InscriptionPoste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617BE2BA1A4E800235E4F /* InscriptionPoste.swift */; };
 		B7F617C42BA1A89400235E4F /* SelectionAnimationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617C32BA1A89400235E4F /* SelectionAnimationVM.swift */; };
@@ -88,12 +84,11 @@
 		2E653EBC2BA9DAA5002E946E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B70CBC3F2BA096920025C340 /* InscriptionListeCreneaux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionListeCreneaux.swift; sourceTree = "<group>"; };
 		B70CBC412BA09E1C0025C340 /* InscriptionCreneau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionCreneau.swift; sourceTree = "<group>"; };
-		B70CBC432BA0ACC30025C340 /* FiltreJeux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltreJeux.swift; sourceTree = "<group>"; };
-		B70CBC452BA0AFD00025C340 /* ExhaustiveFiltre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhaustiveFiltre.swift; sourceTree = "<group>"; };
-		B70CBC482BA0B1940025C340 /* RechercheJeux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechercheJeux.swift; sourceTree = "<group>"; };
 		B71A7CA02BA48CB7003F574A /* InscriptionCreneauxVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionCreneauxVM.swift; sourceTree = "<group>"; };
 		B73F6EB02BB2ED8F00DC4007 /* ObservableArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableArray.swift; sourceTree = "<group>"; };
 		B73F6EB22BB2EE8300DC4007 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		B73F6EB42BB31C2200DC4007 /* Filtre */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Filtre; sourceTree = "<group>"; };
+		B73F6EB62BB31C9800DC4007 /* Filtre */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Filtre; sourceTree = "<group>"; };
 		B77DF5942B8CC62800A07876 /* FestivalMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FestivalMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77DF5972B8CC62800A07876 /* FestivalMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalMobileApp.swift; sourceTree = "<group>"; };
 		B77DF5992B8CC62800A07876 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -112,7 +107,6 @@
 		B7A2E29C2BADD0A100D65DCA /* Poste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poste.swift; sourceTree = "<group>"; };
 		B7A2E29E2BADD0B400D65DCA /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		B7A2E2A02BADDEED00D65DCA /* SelectionPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPreview.swift; sourceTree = "<group>"; };
-		B7F617BA2BA18CA100235E4F /* RechercheJeuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechercheJeuViewModel.swift; sourceTree = "<group>"; };
 		B7F617BC2BA1A49300235E4F /* InscriptionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionAnimation.swift; sourceTree = "<group>"; };
 		B7F617BE2BA1A4E800235E4F /* InscriptionPoste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionPoste.swift; sourceTree = "<group>"; };
 		B7F617C32BA1A89400235E4F /* SelectionAnimationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionAnimationVM.swift; sourceTree = "<group>"; };
@@ -195,16 +189,6 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		B70CBC472BA0B1800025C340 /* Filtre */ = {
-			isa = PBXGroup;
-			children = (
-				B70CBC452BA0AFD00025C340 /* ExhaustiveFiltre.swift */,
-				B70CBC432BA0ACC30025C340 /* FiltreJeux.swift */,
-				B70CBC482BA0B1940025C340 /* RechercheJeux.swift */,
-			);
-			path = Filtre;
-			sourceTree = "<group>";
-		};
 		B77DF58B2B8CC62800A07876 = {
 			isa = PBXGroup;
 			children = (
@@ -285,7 +269,6 @@
 		B77DF5C22B8CC65000A07876 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B7F617B92BA18C8F00235E4F /* Filtre */,
 				2E653EBC2BA9DAA5002E946E /* LoginViewModel.swift */,
 				2E02164F2BADC14000219984 /* Volunteer */,
 				B7A2E28F2BADC2DB00D65DCA /* InscriptionFestival */,
@@ -298,7 +281,6 @@
 			children = (
 				2E0216502BADC19D00219984 /* Volunteer */,
 				2E653EAD2BA9BE84002E946E /* LoginView.swift */,
-				B70CBC472BA0B1800025C340 /* Filtre */,
 				B7A2E2902BADC33000D65DCA /* InscriptionFestival */,
 			);
 			path = Views;
@@ -329,18 +311,10 @@
 			path = InscriptionFestival;
 			sourceTree = "<group>";
 		};
-		B7F617B92BA18C8F00235E4F /* Filtre */ = {
-			isa = PBXGroup;
-			children = (
-				B7F617BA2BA18CA100235E4F /* RechercheJeuViewModel.swift */,
-			);
-			path = Filtre;
-			sourceTree = "<group>";
-		};
 		B7F617C02BA1A83700235E4F /* InscriptionAnimation */ = {
 			isa = PBXGroup;
 			children = (
-				B70CBC472BA0B1800025C340 /* Filtre */,
+				B73F6EB42BB31C2200DC4007 /* Filtre */,
 				B7F617BC2BA1A49300235E4F /* InscriptionAnimation.swift */,
 			);
 			path = InscriptionAnimation;
@@ -370,8 +344,8 @@
 		B7F617D32BA1C2AB00235E4F /* InscriptionAnimation */ = {
 			isa = PBXGroup;
 			children = (
+				B73F6EB62BB31C9800DC4007 /* Filtre */,
 				B7F617C32BA1A89400235E4F /* SelectionAnimationVM.swift */,
-				B7F617B92BA18C8F00235E4F /* Filtre */,
 			);
 			path = InscriptionAnimation;
 			sourceTree = "<group>";
@@ -537,7 +511,6 @@
 				2E653EB92BA9D697002E946E /* LoginEntity.swift in Sources */,
 				2E653EBB2BA9D6A8002E946E /* LoginDTO.swift in Sources */,
 				B7A2E2972BADCF7C00D65DCA /* Festival.swift in Sources */,
-				B70CBC492BA0B1940025C340 /* RechercheJeux.swift in Sources */,
 				2E653EAE2BA9BE84002E946E /* LoginView.swift in Sources */,
 				2E653EBD2BA9DAA5002E946E /* LoginViewModel.swift in Sources */,
 				B77DF59A2B8CC62800A07876 /* ContentView.swift in Sources */,
@@ -545,12 +518,10 @@
 				2E02164E2BADC13800219984 /* RegisterViewModel.swift in Sources */,
 				B71A7CA12BA48CB7003F574A /* InscriptionCreneauxVM.swift in Sources */,
 				B7A2E2992BADD04800D65DCA /* Creneau.swift in Sources */,
-				B70CBC462BA0AFD00025C340 /* ExhaustiveFiltre.swift in Sources */,
 				B7F617CC2BA1AAC300235E4F /* MultiSelectListVM.swift in Sources */,
 				B7F617CA2BA1AA5800235E4F /* MultiSelectObjectVM.swift in Sources */,
 				B7A2E29B2BADD08900D65DCA /* Jeu.swift in Sources */,
 				B7F617BD2BA1A49300235E4F /* InscriptionAnimation.swift in Sources */,
-				B70CBC442BA0ACC30025C340 /* FiltreJeux.swift in Sources */,
 				2E02164C2BADBCB800219984 /* VolunteerDTO.swift in Sources */,
 				2E14C5AC2BB2FD24005E2193 /* HomeView.swift in Sources */,
 				2E653EB02BA9C1DE002E946E /* AuthService.swift in Sources */,
@@ -561,7 +532,6 @@
 				B7F617C42BA1A89400235E4F /* SelectionAnimationVM.swift in Sources */,
 				B77DF5982B8CC62800A07876 /* FestivalMobileApp.swift in Sources */,
 				B7A2E29D2BADD0A100D65DCA /* Poste.swift in Sources */,
-				B7F617BB2BA18CA100235E4F /* RechercheJeuViewModel.swift in Sources */,
 				B7A2E2922BADC35F00D65DCA /* TypeChoix.swift in Sources */,
 				B7F617CE2BA1AF0600235E4F /* ListItemProtocol.swift in Sources */,
 				B7A2E2A12BADDEED00D65DCA /* SelectionPreview.swift in Sources */,

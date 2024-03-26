@@ -107,8 +107,8 @@ struct ContentView: View {
     
     
     var body: some View {
-        NavigationBarView()
-//        InscriptionListeCreneaux(viewModel: InscriptionCreneauxVM(festival: festival))
+//        NavigationBarView()
+        InscriptionListeCreneaux(viewModel: InscriptionCreneauxVM(festival: festival))
 //        RechercheJeux()
     }
 }
