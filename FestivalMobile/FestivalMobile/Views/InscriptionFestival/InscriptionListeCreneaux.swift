@@ -15,21 +15,21 @@ struct InscriptionListeCreneaux: View {
     @State var jour: Int = 0
     
     
-    
     var body: some View {
         NavigationStack{
             Form(content: {
                 Picker("Jour", selection: $jour){
-                    Text("Jour 1").tag(0)
-                    Text("Jour 2").tag(1)
+                    ForEach(0..<viewModel.journees.count){ index in
+                        Text(formatDate(viewModel.journees[index])).tag(index)
+                    }
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 
                 List{
                     
-                    ForEach(viewModel.creneaux, id: \.self){ creneau in
+                    ForEach(viewModel.getCreneauxByDate(journee: viewModel.journees[jour]), id: \.self){ creneau in
                         NavigationLink(destination: InscriptionCreneau(viewModel: creneau)){
-                            Text("\(creneau.dateHeureDebut.formatted(.dateTime.hour().minute().locale(Locale(identifier: "fr_FR"))))")
+                            Text("\(creneau.dateHeureDebut.formatted(.dateTime.hour().minute().locale(Locale(identifier: "fr_FR"))) ) - \(creneau.dateHeureFin.formatted(.dateTime.hour().minute().locale(Locale(identifier: "fr_FR"))))")
                             SelectionPreview(viewModel: creneau)
                         }
                     }
@@ -44,5 +44,13 @@ struct InscriptionListeCreneaux: View {
             .navigationTitle("Festival 2024")
         }
         .padding()
+    }
+    
+    
+    func formatDate(_ date: Date) -> String{
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "fr_FR")
+        formatter.dateFormat = "EEEE d MMMM"
+        return formatter.string(from: date).prefix(3) + " " + formatter.string(from: date).components(separatedBy: " ")[1]
     }
 }

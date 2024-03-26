@@ -14,10 +14,9 @@ struct SelectionAnimation : View {
     
     @ObservedObject var animation : MultiSelectListVM<SelectionAnimationVM>
     
-    @Binding var selectedItems: [MultiSelectObjectVM<SelectionAnimationVM>]
     
     
     var body: some View{
-        MultiSelectList(viewModel: animation, selectedItems: $selectedItems, showSearchBar: true)
+        MultiSelectList(viewModel: animation, showSearchBar: true)
     }
 }

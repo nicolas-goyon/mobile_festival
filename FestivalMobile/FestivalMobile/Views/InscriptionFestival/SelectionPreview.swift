@@ -14,24 +14,32 @@ struct SelectionPreview : View {
     
     
     var body: some View {
-        
         var choixTab : [any ListItemProtocol] = []
         switch viewModel.typeChoix {
         case .Poste:
-            choixTab = viewModel.choixPostes.map({ choixPoste in
+            choixTab = viewModel.posteSelectList.selectedData.array.map({ choixPoste in
                     return choixPoste.data
                 })
         case .Animation:
-            choixTab = viewModel.choixAnimations.map({ choixAnimation in
+            choixTab = viewModel.animationSelectList.selectedData.array.map({ choixAnimation in
                 return choixAnimation.data
             })
+        case .SansChoix:
+            choixTab = []
         }
-
-        return ForEach(choixTab, id: \.self.id){ choix in
-            Text(choix.name)
-                .font(.footnote)
-                .foregroundColor(.gray)
+        
+        var text = choixTab.map({ $0.name }).joined(separator: ", ")
+        let maxSize = 20
+        if text.count > maxSize {
+            let index = text.index(text.startIndex, offsetBy: maxSize)
+            text = String(text[..<index])
+            text = text + "..."
         }
+        
+        return Text(text)
+            .font(.footnote)
+            .foregroundColor(.gray)
+        
         
     }
 }

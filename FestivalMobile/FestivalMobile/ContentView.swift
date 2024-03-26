@@ -16,7 +16,7 @@ struct ContentView: View {
         description: "Un bon festival",
         dates: [
             Date(timeIntervalSince1970: 1711062000), // 22/03/2024
-            Date(timeIntervalSince1970: 1711062000) // 23/03/2024
+            Date(timeIntervalSince1970: 1711148400) // 23/03/2024
         ],
         creneaux: [
             Creneau(

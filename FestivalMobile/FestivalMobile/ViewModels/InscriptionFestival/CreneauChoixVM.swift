@@ -6,8 +6,28 @@
 //
 
 import Foundation
+import Combine
 
-class CreneauChoixVM : ObservableObject, Hashable, Equatable{
+class CreneauChoixVM : ObservableObject, Hashable, Equatable, Subscriber {
+    func receive(_ input: ()) -> Subscribers.Demand {
+        debugPrint("CreneauChoixVM receive")
+        objectWillChange.send()
+        return .none
+    }
+    
+    func receive(completion: Subscribers.Completion<Never>) {
+        objectWillChange.send()
+    }
+    
+    
+    typealias Input = ()
+    
+    typealias Failure = Never
+    
+    func receive(subscription: Subscription) {
+        subscription.request(.unlimited)
+    }
+    
     static func == (lhs: CreneauChoixVM, rhs: CreneauChoixVM) -> Bool {
         return lhs.idCreneau == rhs.idCreneau
     }
@@ -21,9 +41,19 @@ class CreneauChoixVM : ObservableObject, Hashable, Equatable{
     var dateHeureFin : Date
     var postes : [SelectionPosteVM]
     var animations : [SelectionAnimationVM]
-    var choixPostes : [MultiSelectObjectVM<SelectionPosteVM>]
-    var choixAnimations : [MultiSelectObjectVM<SelectionAnimationVM>]
-    var typeChoix : TypeChoix
+    private var _typeChoix : TypeChoix = .SansChoix
+    var typeChoix : TypeChoix {
+        get {
+            return _typeChoix
+        }
+        set {
+            _typeChoix = newValue
+            objectWillChange.send()
+        }
+    }
+    
+    var posteSelectList : MultiSelectListVM<SelectionPosteVM>
+    var animationSelectList : MultiSelectListVM<SelectionAnimationVM>
     
     init(idCreneau: Int, dateDebut: Date, dateFin: Date, postes: [SelectionPosteVM], animations: [SelectionAnimationVM]){
         self.idCreneau = idCreneau
@@ -31,9 +61,11 @@ class CreneauChoixVM : ObservableObject, Hashable, Equatable{
         self.dateHeureFin = dateFin
         self.postes = postes
         self.animations = animations
-        self.choixPostes = []
-        self.choixAnimations = []
-        self.typeChoix = .Poste
+        self.posteSelectList = MultiSelectListVM(data: postes)
+        self.animationSelectList = MultiSelectListVM(data: animations)
+        
+        self.posteSelectList.objectWillChange.receive(subscriber: self)
+        self.animationSelectList.objectWillChange.receive(subscriber: self)
     }
     
     init(creneau: Creneau){
@@ -46,19 +78,12 @@ class CreneauChoixVM : ObservableObject, Hashable, Equatable{
         self.animations = creneau.animations.map({ anim in
             return SelectionAnimationVM(animation: anim)
         })
-        self.choixPostes = []
-        self.choixAnimations = []
-        self.typeChoix = .Poste
-    }
-    
-    
-    
-    func getAnimations() -> MultiSelectListVM<SelectionAnimationVM>{
-        return MultiSelectListVM(data: self.animations)
-    }
-    
-    func getPostes() -> MultiSelectListVM<SelectionPosteVM>{
-        return MultiSelectListVM(data: self.postes)
+        
+        self.posteSelectList = MultiSelectListVM(data: postes)
+        self.animationSelectList = MultiSelectListVM(data: animations)
+        
+        self.posteSelectList.objectWillChange.receive(subscriber: self)
+        self.animationSelectList.objectWillChange.receive(subscriber: self)
     }
     
     

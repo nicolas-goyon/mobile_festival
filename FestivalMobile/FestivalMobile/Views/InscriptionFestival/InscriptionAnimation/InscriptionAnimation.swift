@@ -18,10 +18,10 @@ struct InscriptionAnimation : View {
     
     
     var postesSelectionneText: String {
-        if viewModel.choixAnimations.count == 0 {
+        if viewModel.animationSelectList.selectedData.count == 0 {
             return "Aucun animation sélectionné"
         }
-        var text = viewModel.choixAnimations.map({ $0.name }).joined(separator: ", ")
+        var text = viewModel.animationSelectList.selectedData.map({ $0.name }).joined(separator: ", ")
         let maxSize = 25
         if text.count > maxSize {
             let index = text.index(text.startIndex, offsetBy: maxSize)
@@ -33,13 +33,13 @@ struct InscriptionAnimation : View {
     
     var body: some View{
         Form{
-            Section{
-                NavigationLink(destination: FiltreJeux() ){
-                    Text("Fitres")
-                }
-            }
+//            Section{
+//                NavigationLink(destination: FiltreJeux() ){
+//                    Text("Fitres")
+//                }
+//            }
             Section(header: Text("Zones")){
-                NavigationLink(destination: SelectionAnimation(animation: viewModel.getAnimations(), selectedItems: $viewModel.choixAnimations).navigationTitle("Sélection zone") ){
+                NavigationLink(destination: MultiSelectList(viewModel: viewModel.animationSelectList, showSearchBar: true).navigationTitle("Sélection zone") ){
                     Text("Selection zone")
                 }
                 Text(postesSelectionneText)
@@ -48,11 +48,16 @@ struct InscriptionAnimation : View {
             }
             
             Button(action: {
-                print("Validation poste")
+                viewModel.typeChoix = .Animation
             }) {
                 Text("Valider les animation")
             }
             
+            Button(action: {
+                viewModel.typeChoix = .SansChoix
+            }) {
+                Text("Réinitialiser le choix")
+            }.foregroundColor(.red)
         }
     }
 }

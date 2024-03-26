@@ -13,18 +13,13 @@ struct InscriptionPoste : View {
     
     @ObservedObject var viewModel : CreneauChoixVM
     
-    var animations: MultiSelectListVM<SelectionAnimationVM> {
-        viewModel.getAnimations()
-    }
-    
-    
     
     
     var postesSelectionneText: String {
-        if viewModel.choixPostes.count == 0 {
+        if viewModel.posteSelectList.selectedData.count == 0 {
             return "Aucun poste sélectionné"
         }
-        var text = viewModel.choixPostes.map({ $0.name }).joined(separator: ", ")
+        var text = viewModel.posteSelectList.selectedData.map({ $0.name }).joined(separator: ", ")
         let maxSize = 25
         if text.count > maxSize {
             let index = text.index(text.startIndex, offsetBy: maxSize)
@@ -37,7 +32,7 @@ struct InscriptionPoste : View {
     var body: some View{
         Form{
             Section{
-                NavigationLink(destination: SelectionPoste(postes: viewModel.getPostes(), selectedItems: $viewModel.choixPostes).navigationTitle("Sélection des postes") ){
+                NavigationLink(destination: MultiSelectList(viewModel: viewModel.posteSelectList, showSearchBar: true).navigationTitle("Sélection des postes") ){
                     Text("Postes")
                 }
                 Text(postesSelectionneText)
@@ -45,11 +40,16 @@ struct InscriptionPoste : View {
                     .foregroundColor(.gray)
             }
             Button(action: {
-                print("Validation poste")
+                viewModel.typeChoix = .Poste
             }) {
                 Text("Valider les postes")
             }
             
+            Button(action: {
+                viewModel.typeChoix = .SansChoix
+            }) {
+                Text("Réinitialiser le choix")
+            }.foregroundColor(.red)
         }
     }
 }

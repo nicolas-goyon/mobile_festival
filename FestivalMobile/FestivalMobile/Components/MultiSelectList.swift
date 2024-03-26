@@ -10,7 +10,6 @@ import SwiftUI
 
 struct MultiSelectList<T: ListItemProtocol>: View {
     @ObservedObject var viewModel: MultiSelectListVM<T>
-    @Binding var selectedItems: [MultiSelectObjectVM<T>]
     var showSearchBar: Bool = false
     
     var body: some View {
@@ -20,12 +19,12 @@ struct MultiSelectList<T: ListItemProtocol>: View {
                 }
                 List {
                     ForEach(viewModel.filteredResults) { item in
-                        ListRowView(item: item, isSelected: .constant(selectedItems.contains(where: { $0.id == item.id })))
+                        ListRowView(item: item, isSelected: .constant(viewModel.selectedData.contains(where: { $0.id == item.id })))
                             .onTapGesture {
-                                if let index = selectedItems.firstIndex(where: { $0.id == item.id }) {
-                                    selectedItems.remove(at: index)
+                                if let index = viewModel.selectedData.firstIndex(where: { $0.id == item.id }) {
+                                    viewModel.selectedData.remove(at: index)
                                 } else {
-                                    selectedItems.append(item)
+                                    viewModel.selectedData.append(item)
                                 }
                                 viewModel.selectItem(item: item)
                                 

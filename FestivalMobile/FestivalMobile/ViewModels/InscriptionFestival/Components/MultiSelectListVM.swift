@@ -6,10 +6,29 @@
 //
 
 import Foundation
+import Combine
 
-class MultiSelectListVM<T : ListItemProtocol>: ObservableObject{
+class MultiSelectListVM<T : ListItemProtocol>: ObservableObject, Subscriber {
+    func receive(_ input: ()) -> Subscribers.Demand {
+        objectWillChange.send()
+        return .none
+        
+    }
+    
+    func receive(completion: Subscribers.Completion<Never>) {
+        objectWillChange.send()
+    }
+    
+    typealias Input = ()
+    
+    typealias Failure = Never
+    
+    func receive(subscription: Subscription) {
+        subscription.request(.unlimited)
+    }
+    
     @Published var listData : [MultiSelectObjectVM<T>] = []
-    @Published var selectedData : [MultiSelectObjectVM<T>] = []
+    @Published var selectedData : ObservableArray<MultiSelectObjectVM<T>> = ObservableArray<MultiSelectObjectVM<T>>(array:[])
     @Published var searchText : String = "" {
         didSet {
             filterData()
@@ -20,6 +39,7 @@ class MultiSelectListVM<T : ListItemProtocol>: ObservableObject{
     init(data: [T]){
         self.listData = data.map{MultiSelectObjectVM(data: $0)}
         self.filteredResults = listData
+        selectedData.objectWillChange.receive(subscriber: self)
     }
     
     func filterData(){

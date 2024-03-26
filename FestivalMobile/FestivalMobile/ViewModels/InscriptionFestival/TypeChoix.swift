@@ -10,4 +10,5 @@ import Foundation
 enum TypeChoix{
     case Poste
     case Animation
+    case SansChoix
 }

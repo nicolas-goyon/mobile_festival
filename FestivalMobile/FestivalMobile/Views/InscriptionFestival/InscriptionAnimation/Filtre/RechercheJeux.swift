@@ -25,10 +25,9 @@ struct RechercheJeux: View {
         RechercheJeuVM(jeu: "Jeu 5")
     ])
     
-    @State private var selectedItems: [MultiSelectObjectVM<RechercheJeuVM>] = []
 
     var body: some View {
-        MultiSelectList(viewModel: viewModel, selectedItems: $selectedItems, showSearchBar: true)
+        MultiSelectList(viewModel: viewModel, showSearchBar: true)
         
     }
     
