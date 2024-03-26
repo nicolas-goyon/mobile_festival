@@ -12,6 +12,8 @@
 		2E0216522BADC1B000219984 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0216512BADC1B000219984 /* RegisterView.swift */; };
 		2E0216552BADC97300219984 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = 2E0216542BADC97300219984 /* iPhoneNumberField */; };
 		2E0216572BADDF9D00219984 /* RegisterAnswerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0216562BADDF9D00219984 /* RegisterAnswerDTO.swift */; };
+		2E14C5A82BB2F203005E2193 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14C5A72BB2F203005E2193 /* NavigationBarView.swift */; };
+		2E14C5AC2BB2FD24005E2193 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14C5AB2BB2FD24005E2193 /* HomeView.swift */; };
 		2E653EAE2BA9BE84002E946E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EAD2BA9BE84002E946E /* LoginView.swift */; };
 		2E653EB02BA9C1DE002E946E /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EAF2BA9C1DE002E946E /* AuthService.swift */; };
 		2E653EB72BA9D67A002E946E /* JSONHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EB62BA9D67A002E946E /* JSONHelper.swift */; };
@@ -55,6 +57,8 @@
 		2E02164D2BADC13800219984 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		2E0216512BADC1B000219984 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		2E0216562BADDF9D00219984 /* RegisterAnswerDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAnswerDTO.swift; sourceTree = "<group>"; };
+		2E14C5A72BB2F203005E2193 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
+		2E14C5AB2BB2FD24005E2193 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2E653EAD2BA9BE84002E946E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		2E653EAF2BA9C1DE002E946E /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		2E653EB62BA9D67A002E946E /* JSONHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONHelper.swift; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 				B77DF5C12B8CC64700A07876 /* Models */,
 				B77DF5972B8CC62800A07876 /* FestivalMobileApp.swift */,
 				B77DF5992B8CC62800A07876 /* ContentView.swift */,
+				2E14C5A72BB2F203005E2193 /* NavigationBarView.swift */,
+				2E14C5AB2BB2FD24005E2193 /* HomeView.swift */,
 				B77DF59B2B8CC62A00A07876 /* Assets.xcassets */,
 				B77DF59D2B8CC62A00A07876 /* Preview Content */,
 			);
@@ -393,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E14C5A82BB2F203005E2193 /* NavigationBarView.swift in Sources */,
 				B70CBC422BA09E1C0025C340 /* InscriptionCreneau.swift in Sources */,
 				B70CBC402BA096920025C340 /* InscriptionListeCreneaux.swift in Sources */,
 				2E653EB92BA9D697002E946E /* LoginEntity.swift in Sources */,
@@ -406,6 +413,7 @@
 				B70CBC462BA0AFD00025C340 /* ExhaustiveFiltre.swift in Sources */,
 				B70CBC442BA0ACC30025C340 /* FiltreJeux.swift in Sources */,
 				2E02164C2BADBCB800219984 /* VolunteerDTO.swift in Sources */,
+				2E14C5AC2BB2FD24005E2193 /* HomeView.swift in Sources */,
 				2E653EB02BA9C1DE002E946E /* AuthService.swift in Sources */,
 				2E0216572BADDF9D00219984 /* RegisterAnswerDTO.swift in Sources */,
 				2E653EB72BA9D67A002E946E /* JSONHelper.swift in Sources */,
