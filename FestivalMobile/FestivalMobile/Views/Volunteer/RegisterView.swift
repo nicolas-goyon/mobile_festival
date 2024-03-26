@@ -25,47 +25,51 @@ struct RegisterView: View {
     @StateObject var rvm = RegisterViewModel()
     
     var body: some View {
-        Text("Register").font(.title)
-        Form(content: {
-            Section("Required Information", content: {
-                
-                TextField("Firstname", text: $firstname)
-                TextField("Lastname", text: $lastname)
-                TextField("Email", text: $email)
-                SecureField("Password", text: $password)
-                Stepper("Number of Edition Performed : \(nbEditionPerformed)", value: $nbEditionPerformed, in: 0...130)
-                Picker("Tshirt Size", selection: $tshirtSize) {
-                    ForEach(TshirtSizeEnum.allCases) { tshirt in
-                        Text(tshirt.rawValue)
+        ZStack {
+            VStack(alignment: .center, spacing: 20) {
+                Text("Register").font(.title)
+                Form(content: {
+                    Section("Required Information", content: {
+                        
+                        TextField("Firstname", text: $firstname)
+                        TextField("Lastname", text: $lastname)
+                        TextField("Email", text: $email)
+                        SecureField("Password", text: $password)
+                        Stepper("Number of Edition Performed : \(nbEditionPerformed)", value: $nbEditionPerformed, in: 0...130)
+                        Picker("Tshirt Size", selection: $tshirtSize) {
+                            ForEach(TshirtSizeEnum.allCases) { tshirt in
+                                Text(tshirt.rawValue)
+                            }
+                        }
+                        Picker("Lodging", selection: $lodging) {
+                            ForEach(LodgingEnum.allCases) { lodgingField in
+                                Text(lodgingField.rawValue)
+                            }
+                        }
+                        Picker("Food Regime", selection: $foodRegime) {
+                            ForEach(FoodRegimeEnum.allCases) { foodRegimeField in
+                                Text(foodRegimeField.rawValue)
+                            }
+                        }
+                    })
+                    
+                    Section("Optional Information", content: {
+                        TextField("Address", text: $address)
+                        iPhoneNumberField("Phone", text: $phone)
+                            .flagHidden(false)
+                            .flagSelectable(true)
+                        TextField("Username", text: $username)
+                        TextField("Avatar Url", text: $avatarUrl)
+                    })
+                    Button("Submit") {
+                        Task {
+                            await rvm.register(firstname: firstname, lastname: lastname, email: email, password: password, nbEditionPerformed: nbEditionPerformed, tshirtSize: tshirtSize, lodging: lodging, foodRegime: foodRegime, address: address, phone: phone, username: username, avatarUrl: avatarUrl)
+                        }
                     }
-                }
-                Picker("Lodging", selection: $lodging) {
-                    ForEach(LodgingEnum.allCases) { lodgingField in
-                        Text(lodgingField.rawValue)
-                    }
-                }
-                Picker("Food Regime", selection: $foodRegime) {
-                    ForEach(FoodRegimeEnum.allCases) { foodRegimeField in
-                        Text(foodRegimeField.rawValue)
-                    }
-                }
-            })
-            
-            Section("Optional Information", content: {
-                TextField("Address", text: $address)
-                iPhoneNumberField("Phone", text: $phone)
-                    .flagHidden(false)
-                    .flagSelectable(true)
-                TextField("Username", text: $username)
-                TextField("Avatar Url", text: $avatarUrl)
-            })
-            Button("Submit") {
-                Task {
-                    await rvm.register(firstname: firstname, lastname: lastname, email: email, password: password, nbEditionPerformed: nbEditionPerformed, tshirtSize: tshirtSize, lodging: lodging, foodRegime: foodRegime, address: address, phone: phone, username: username, avatarUrl: avatarUrl)
-                }
+                    
+                })
             }
-            
-        })
+        }
     }
 }
 
