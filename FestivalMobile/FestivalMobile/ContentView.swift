@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     var festival : Festival = Festival(
-        id: 1,
+        id: "1",
         nom: "Festival 2024",
         adresse: "Corum",
         description: "Un bon festival",
@@ -103,13 +103,18 @@ struct ContentView: View {
     
     
     
-    
+        let festivalVM = FestivalVM()
     
     
     var body: some View {
 //        NavigationBarView()
-        InscriptionListeCreneaux(viewModel: InscriptionCreneauxVM(festival: festival))
+        //InscriptionListeCreneaux(viewModel: InscriptionCreneauxVM(festival: festival))
 //        RechercheJeux()
+        Button("Festivals"){
+            Task{
+                await festivalVM.fetchAllFestival()
+            }
+        }
     }
 }
 
