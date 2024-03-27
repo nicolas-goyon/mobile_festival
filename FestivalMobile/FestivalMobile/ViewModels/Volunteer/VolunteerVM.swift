@@ -127,7 +127,6 @@ class VolunteerVM: ObservableObject {
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             if let token = UserDefaults.standard.string(forKey: "token") {
                 request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-                //request.setValue("Bearer NDM.ZoqEckgqVqOg6vPT7uDnWxjgwbimbKUQ9JqLJI5eeZqrhL6dVkuyBz14oCsU", forHTTPHeaderField: "Authorization")
             }
             
             let parameters: [String: Any] = ["id": id, "firstname": firstname, "lastname": lastname, "nb_edition_performed": nbEditionPerformed, "tshirt_size": tshirtSize, "lodging": lodging, "food_regime": foodRegime, "address": address, "phone":phone, "username":username, "avatar_url":avatarUrl, "associations":associations]
