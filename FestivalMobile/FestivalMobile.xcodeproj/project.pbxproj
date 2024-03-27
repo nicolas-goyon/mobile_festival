@@ -29,7 +29,7 @@
 		B74B866B2BB4546900E45C29 /* AttributionVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74B866A2BB4546900E45C29 /* AttributionVM.swift */; };
 		B74B866D2BB4552B00E45C29 /* AttributionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74B866C2BB4552B00E45C29 /* AttributionDetail.swift */; };
 		B74B866F2BB4555800E45C29 /* AttributionDetailVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74B866E2BB4555800E45C29 /* AttributionDetailVM.swift */; };
-		B74B86712BB45BCF00E45C29 /* AttributionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74B86702BB45BCF00E45C29 /* AttributionDTO.swift */; };
+		B74B86732BB45F3700E45C29 /* AttributionDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74B86722BB45F3700E45C29 /* AttributionDTO.swift */; };
 		B77DF5982B8CC62800A07876 /* FestivalMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DF5972B8CC62800A07876 /* FestivalMobileApp.swift */; };
 		B77DF59A2B8CC62800A07876 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77DF5992B8CC62800A07876 /* ContentView.swift */; };
 		B77DF59C2B8CC62A00A07876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B77DF59B2B8CC62A00A07876 /* Assets.xcassets */; };
@@ -98,7 +98,7 @@
 		B74B866A2BB4546900E45C29 /* AttributionVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionVM.swift; sourceTree = "<group>"; };
 		B74B866C2BB4552B00E45C29 /* AttributionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionDetail.swift; sourceTree = "<group>"; };
 		B74B866E2BB4555800E45C29 /* AttributionDetailVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionDetailVM.swift; sourceTree = "<group>"; };
-		B74B86702BB45BCF00E45C29 /* AttributionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionDTO.swift; sourceTree = "<group>"; };
+		B74B86722BB45F3700E45C29 /* AttributionDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttributionDTO.swift; sourceTree = "<group>"; };
 		B77DF5942B8CC62800A07876 /* FestivalMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FestivalMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77DF5972B8CC62800A07876 /* FestivalMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalMobileApp.swift; sourceTree = "<group>"; };
 		B77DF5992B8CC62800A07876 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -290,7 +290,7 @@
 				B7A2E29A2BADD08900D65DCA /* Jeu.swift */,
 				B7A2E29C2BADD0A100D65DCA /* Poste.swift */,
 				B7A2E29E2BADD0B400D65DCA /* Animation.swift */,
-				B74B86702BB45BCF00E45C29 /* AttributionDTO.swift */,
+				B74B86722BB45F3700E45C29 /* AttributionDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -572,7 +572,7 @@
 				B7A2E2A12BADDEED00D65DCA /* SelectionPreview.swift in Sources */,
 				B7F617D02BA1B20F00235E4F /* SearchBarView.swift in Sources */,
 				B7F617C72BA1A9D600235E4F /* MultiSelectList.swift in Sources */,
-				B74B86712BB45BCF00E45C29 /* AttributionDTO.swift in Sources */,
+				B74B86732BB45F3700E45C29 /* AttributionDTO.swift in Sources */,
 				B7A2E29F2BADD0B400D65DCA /* Animation.swift in Sources */,
 				B7F617D22BA1B23700235E4F /* ListRowView.swift in Sources */,
 			);
