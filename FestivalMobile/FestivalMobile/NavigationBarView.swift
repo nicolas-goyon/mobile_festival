@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NavigationBarView: View {
     
+    @ObservedObject var viewModel : VolunteerVM
     @State private var selectedView = "home"
     
     let color = UIColor(red: 115/255, green: 150/255, blue: 0/255, alpha: 1)
@@ -32,6 +33,11 @@ struct NavigationBarView: View {
                     Label("Login", systemImage: "person.crop.circle.fill")
                 }
                 .tag("login")
+            ProfileView(viewModel: viewModel)
+                .tabItem {
+                    Label("Profile", systemImage: "person.crop.circle.fill")
+                }
+                .tag("profile")
         }
         .accentColor(Color(color))
         .navigationViewStyle(StackNavigationViewStyle())
@@ -43,6 +49,6 @@ struct NavigationBarView: View {
 
 struct NavigationBarView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationBarView()
+        NavigationBarView(viewModel: VolunteerVM())
     }
 }
