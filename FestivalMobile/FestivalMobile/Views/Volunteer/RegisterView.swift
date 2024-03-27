@@ -22,7 +22,7 @@ struct RegisterView: View {
     @State var phone : String = ""
     @State var username : String = ""
     @State var avatarUrl : String = ""
-    @StateObject var rvm = RegisterViewModel()
+    @StateObject var rvm = VolunteerVM()
     
     var body: some View {
         ZStack {

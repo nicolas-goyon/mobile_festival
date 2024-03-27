@@ -1,13 +1,13 @@
 //
-//  VolunteerCreate.swift
+//  VolunteerVM.swift
 //  FestivalMobile
 //
-//  Created by Suzanne ROBERT on 22/03/2024.
+//  Created by Suzanne ROBERT on 27/03/2024.
 //
 
 import Foundation
 
-class RegisterViewModel: ObservableObject {
+class VolunteerVM : ObservableObject {
     func register(firstname: String, lastname: String, email: String, password: String, nbEditionPerformed: Int, tshirtSize: TshirtSizeEnum, lodging: LodgingEnum, foodRegime: FoodRegimeEnum, address: String?, phone: String?, username: String?, avatarUrl: String?) async{
         guard let url = URL(string: ProcessInfo.processInfo.environment["API_URL"]!+"auth/register") else {
            debugPrint("Bad URL when trying to register")
@@ -43,3 +43,4 @@ class RegisterViewModel: ObservableObject {
         }
     }
 }
+

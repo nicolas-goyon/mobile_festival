@@ -103,18 +103,14 @@ struct ContentView: View {
     
     
     
-        let festivalVM = FestivalVM()
+        let volunteerVM = VolunteerVM()
     
     
     var body: some View {
-//        NavigationBarView()
+        NavigationBarView(viewModel: volunteerVM)
         //InscriptionListeCreneaux(viewModel: InscriptionCreneauxVM(festival: festival))
 //        RechercheJeux()
-        Button("Festivals"){
-            Task{
-                await festivalVM.fetchAllFestival()
-            }
-        }
+        //ProfileView(viewModel: volunteerVM)
     }
 }
 

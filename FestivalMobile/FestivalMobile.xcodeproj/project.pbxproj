@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2E02164C2BADBCB800219984 /* VolunteerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E02164B2BADBCB800219984 /* VolunteerDTO.swift */; };
-		2E02164E2BADC13800219984 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E02164D2BADC13800219984 /* RegisterViewModel.swift */; };
+		2E02164E2BADC13800219984 /* VolunteerVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E02164D2BADC13800219984 /* VolunteerVM.swift */; };
 		2E0216522BADC1B000219984 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0216512BADC1B000219984 /* RegisterView.swift */; };
 		2E0216552BADC97300219984 /* iPhoneNumberField in Frameworks */ = {isa = PBXBuildFile; productRef = 2E0216542BADC97300219984 /* iPhoneNumberField */; };
-		2E0216572BADDF9D00219984 /* RegisterAnswerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0216562BADDF9D00219984 /* RegisterAnswerDTO.swift */; };
+		2E0216572BADDF9D00219984 /* AnswerDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0216562BADDF9D00219984 /* AnswerDTO.swift */; };
 		2E14C5A82BB2F203005E2193 /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14C5A72BB2F203005E2193 /* NavigationBarView.swift */; };
 		2E14C5AC2BB2FD24005E2193 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14C5AB2BB2FD24005E2193 /* HomeView.swift */; };
 		2E14C5AE2BB3280E005E2193 /* FestivalDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E14C5AD2BB3280E005E2193 /* FestivalDTO.swift */; };
@@ -22,6 +22,7 @@
 		2E653EB92BA9D697002E946E /* LoginEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EB82BA9D697002E946E /* LoginEntity.swift */; };
 		2E653EBB2BA9D6A8002E946E /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EBA2BA9D6A8002E946E /* LoginDTO.swift */; };
 		2E653EBD2BA9DAA5002E946E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E653EBC2BA9DAA5002E946E /* LoginViewModel.swift */; };
+		2EC14ACA2BB4962800CF8D04 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC14AC92BB4962800CF8D04 /* ProfileView.swift */; };
 		B70CBC402BA096920025C340 /* InscriptionListeCreneaux.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70CBC3F2BA096920025C340 /* InscriptionListeCreneaux.swift */; };
 		B70CBC422BA09E1C0025C340 /* InscriptionCreneau.swift in Sources */ = {isa = PBXBuildFile; fileRef = B70CBC412BA09E1C0025C340 /* InscriptionCreneau.swift */; };
 		B71A7CA12BA48CB7003F574A /* InscriptionCreneauxVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B71A7CA02BA48CB7003F574A /* InscriptionCreneauxVM.swift */; };
@@ -73,9 +74,9 @@
 
 /* Begin PBXFileReference section */
 		2E02164B2BADBCB800219984 /* VolunteerDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerDTO.swift; sourceTree = "<group>"; };
-		2E02164D2BADC13800219984 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		2E02164D2BADC13800219984 /* VolunteerVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VolunteerVM.swift; path = Volunteer/VolunteerVM.swift; sourceTree = "<group>"; };
 		2E0216512BADC1B000219984 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
-		2E0216562BADDF9D00219984 /* RegisterAnswerDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterAnswerDTO.swift; sourceTree = "<group>"; };
+		2E0216562BADDF9D00219984 /* AnswerDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerDTO.swift; sourceTree = "<group>"; };
 		2E14C5A72BB2F203005E2193 /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
 		2E14C5AB2BB2FD24005E2193 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2E14C5AD2BB3280E005E2193 /* FestivalDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalDTO.swift; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		2E653EB82BA9D697002E946E /* LoginEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEntity.swift; sourceTree = "<group>"; };
 		2E653EBA2BA9D6A8002E946E /* LoginDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
 		2E653EBC2BA9DAA5002E946E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2EC14AC92BB4962800CF8D04 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		B70CBC3F2BA096920025C340 /* InscriptionListeCreneaux.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionListeCreneaux.swift; sourceTree = "<group>"; };
 		B70CBC412BA09E1C0025C340 /* InscriptionCreneau.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionCreneau.swift; sourceTree = "<group>"; };
 		B71A7CA02BA48CB7003F574A /* InscriptionCreneauxVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionCreneauxVM.swift; sourceTree = "<group>"; };
@@ -149,18 +151,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E02164F2BADC14000219984 /* Volunteer */ = {
-			isa = PBXGroup;
-			children = (
-				2E02164D2BADC13800219984 /* RegisterViewModel.swift */,
-			);
-			path = Volunteer;
-			sourceTree = "<group>";
-		};
 		2E0216502BADC19D00219984 /* Volunteer */ = {
 			isa = PBXGroup;
 			children = (
 				2E0216512BADC1B000219984 /* RegisterView.swift */,
+				2EC14AC92BB4962800CF8D04 /* ProfileView.swift */,
 			);
 			path = Volunteer;
 			sourceTree = "<group>";
@@ -180,7 +175,7 @@
 				2E653EB62BA9D67A002E946E /* JSONHelper.swift */,
 				2E653EB82BA9D697002E946E /* LoginEntity.swift */,
 				2E653EBA2BA9D6A8002E946E /* LoginDTO.swift */,
-				2E0216562BADDF9D00219984 /* RegisterAnswerDTO.swift */,
+				2E0216562BADDF9D00219984 /* AnswerDTO.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -274,9 +269,9 @@
 		B77DF5C22B8CC65000A07876 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2E02164D2BADC13800219984 /* VolunteerVM.swift */,
 				2E14C5B02BB32949005E2193 /* FestivalVM.swift */,
 				2E653EBC2BA9DAA5002E946E /* LoginViewModel.swift */,
-				2E02164F2BADC14000219984 /* Volunteer */,
 				B7A2E28F2BADC2DB00D65DCA /* InscriptionFestival */,
 			);
 			path = ViewModels;
@@ -523,7 +518,7 @@
 				B77DF59A2B8CC62800A07876 /* ContentView.swift in Sources */,
 				2E14C5B12BB32949005E2193 /* FestivalVM.swift in Sources */,
 				2E0216522BADC1B000219984 /* RegisterView.swift in Sources */,
-				2E02164E2BADC13800219984 /* RegisterViewModel.swift in Sources */,
+				2E02164E2BADC13800219984 /* VolunteerVM.swift in Sources */,
 				B71A7CA12BA48CB7003F574A /* InscriptionCreneauxVM.swift in Sources */,
 				B7A2E2992BADD04800D65DCA /* Creneau.swift in Sources */,
 				B7F617CC2BA1AAC300235E4F /* MultiSelectListVM.swift in Sources */,
@@ -533,13 +528,14 @@
 				2E02164C2BADBCB800219984 /* VolunteerDTO.swift in Sources */,
 				2E14C5AC2BB2FD24005E2193 /* HomeView.swift in Sources */,
 				2E653EB02BA9C1DE002E946E /* AuthService.swift in Sources */,
-				2E0216572BADDF9D00219984 /* RegisterAnswerDTO.swift in Sources */,
+				2E0216572BADDF9D00219984 /* AnswerDTO.swift in Sources */,
 				2E653EB72BA9D67A002E946E /* JSONHelper.swift in Sources */,
 				B73F6EB32BB2EE8300DC4007 /* Tests.swift in Sources */,
 				B73F6EB12BB2ED8F00DC4007 /* ObservableArray.swift in Sources */,
 				B7F617C42BA1A89400235E4F /* SelectionAnimationVM.swift in Sources */,
 				B77DF5982B8CC62800A07876 /* FestivalMobileApp.swift in Sources */,
 				B7A2E29D2BADD0A100D65DCA /* Poste.swift in Sources */,
+				2EC14ACA2BB4962800CF8D04 /* ProfileView.swift in Sources */,
 				B7A2E2922BADC35F00D65DCA /* TypeChoix.swift in Sources */,
 				B7F617CE2BA1AF0600235E4F /* ListItemProtocol.swift in Sources */,
 				B7A2E2A12BADDEED00D65DCA /* SelectionPreview.swift in Sources */,
