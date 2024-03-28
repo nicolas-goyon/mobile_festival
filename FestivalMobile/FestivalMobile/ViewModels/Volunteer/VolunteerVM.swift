@@ -39,13 +39,14 @@ class VolunteerVM: ObservableObject {
             
             debugPrint("email = \(email)")
             debugPrint("password = \(password)")
-            let volunteerDto = VolunteerDTO(firstname: firstname, lastname: lastname, email: email, password: password, nbEditionPerformed: nbEditionPerformed, tshirtSize: tshirtSize, lodging: lodging, foodRegime: foodRegime, address: address, phone: phone, username: username, avatarUrl: avatarUrl)
+            let volunteerDto = VolunteerDTOBis(firstname: firstname, lastname: lastname, email: email, password: password, nbEditionPerformed: nbEditionPerformed, tshirtSize: tshirtSize, lodging: lodging, foodRegime: foodRegime, address: address, phone: phone, username: username, avatarUrl: avatarUrl)
             print("register : \(volunteerDto)")
             guard let stringdata  = await JSONHelper.encode(data: volunteerDto) else { fatalError() }
-            guard let stringjson : VolunteerDTO = await JSONHelper.decode(data: stringdata) else { fatalError() }
+            guard let stringjson : VolunteerDTOBis = await JSONHelper.decode(data: stringdata) else { fatalError() }
             guard let encoded : Data = await JSONHelper.encode(data: volunteerDto) else { fatalError() }
             debugPrint(encoded)
             let (data, response) = try await URLSession.shared.upload(for: request, from: encoded)
+            print(String(data: data, encoding: .utf8) ?? "No data")
             let httpresponse = response as! HTTPURLResponse // le bon type
             if httpresponse.statusCode == 201{ // tout s'est bien passé
                 guard let message : AnswerDTO = await JSONHelper.decode(data: data) else { // utilisation de notre décodeur
