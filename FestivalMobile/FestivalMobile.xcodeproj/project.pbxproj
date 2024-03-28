@@ -49,6 +49,7 @@
 		B7A2E29D2BADD0A100D65DCA /* Poste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E29C2BADD0A100D65DCA /* Poste.swift */; };
 		B7A2E29F2BADD0B400D65DCA /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E29E2BADD0B400D65DCA /* Animation.swift */; };
 		B7A2E2A12BADDEED00D65DCA /* SelectionPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A2E2A02BADDEED00D65DCA /* SelectionPreview.swift */; };
+		B7E985662BB5799A001AC0BF /* WishDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E985652BB5799A001AC0BF /* WishDTO.swift */; };
 		B7F617BD2BA1A49300235E4F /* InscriptionAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617BC2BA1A49300235E4F /* InscriptionAnimation.swift */; };
 		B7F617BF2BA1A4E800235E4F /* InscriptionPoste.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617BE2BA1A4E800235E4F /* InscriptionPoste.swift */; };
 		B7F617C42BA1A89400235E4F /* SelectionAnimationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F617C32BA1A89400235E4F /* SelectionAnimationVM.swift */; };
@@ -125,6 +126,7 @@
 		B7A2E29C2BADD0A100D65DCA /* Poste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poste.swift; sourceTree = "<group>"; };
 		B7A2E29E2BADD0B400D65DCA /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		B7A2E2A02BADDEED00D65DCA /* SelectionPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPreview.swift; sourceTree = "<group>"; };
+		B7E985652BB5799A001AC0BF /* WishDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishDTO.swift; sourceTree = "<group>"; };
 		B7F617BC2BA1A49300235E4F /* InscriptionAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionAnimation.swift; sourceTree = "<group>"; };
 		B7F617BE2BA1A4E800235E4F /* InscriptionPoste.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InscriptionPoste.swift; sourceTree = "<group>"; };
 		B7F617C32BA1A89400235E4F /* SelectionAnimationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionAnimationVM.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				B74B867A2BB4D2D500E45C29 /* DTOS.swift */,
 				B74B867C2BB4E7A600E45C29 /* RegisterDTO.swift */,
 				B74B86822BB4ED8300E45C29 /* ConnexionToken.swift */,
+				B7E985652BB5799A001AC0BF /* WishDTO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				B74B86832BB4ED8300E45C29 /* ConnexionToken.swift in Sources */,
 				B7A2E29B2BADD08900D65DCA /* Jeu.swift in Sources */,
 				B7F617BD2BA1A49300235E4F /* InscriptionAnimation.swift in Sources */,
+				B7E985662BB5799A001AC0BF /* WishDTO.swift in Sources */,
 				2E02164C2BADBCB800219984 /* VolunteerDTO.swift in Sources */,
 				2E14C5AC2BB2FD24005E2193 /* HomeView.swift in Sources */,
 				2E653EB02BA9C1DE002E946E /* AuthService.swift in Sources */,
