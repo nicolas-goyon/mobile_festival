@@ -44,7 +44,7 @@ class VolunteerVM: ObservableObject {
             guard let stringdata  = await JSONHelper.encode(data: volunteerDto) else { fatalError() }
             guard let stringjson : VolunteerDTO = await JSONHelper.decode(data: stringdata) else { fatalError() }
             guard let encoded : Data = await JSONHelper.encode(data: volunteerDto) else { fatalError() }
-            
+            debugPrint(encoded)
             let (data, response) = try await URLSession.shared.upload(for: request, from: encoded)
             let httpresponse = response as! HTTPURLResponse // le bon type
             if httpresponse.statusCode == 201{ // tout s'est bien passé

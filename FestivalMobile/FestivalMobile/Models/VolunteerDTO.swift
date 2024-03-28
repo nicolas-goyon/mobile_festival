@@ -42,6 +42,25 @@ struct VolunteerDTO : Codable {
         self.isAdmin = is_admin
         self.associations = associations
     }
+    /*
+    enum CodingKeys: String, CodingKey {
+        case id
+        case firstname
+        case lastname
+        case email
+        case password
+        case nbEditionPerformed = "nb_edition_performed"
+        case tshirtSize = "tshirt_size"
+        case lodging
+        case foodRegime = "food_regime"
+        case address
+        case phone
+        case username
+        case avatarUrl = "avatar_url"
+        case isAdmin = "is_admin"
+        case associations
+    }
+     */
 }
 
 enum TshirtSizeEnum : String, Codable, CaseIterable, Identifiable {
