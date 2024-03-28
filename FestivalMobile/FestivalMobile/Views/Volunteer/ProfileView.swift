@@ -70,6 +70,61 @@ struct ProfileView: View {
                     .opacity(0.5) // Grise le champ lorsque isEditing est false
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(greenMedium, lineWidth: 1).opacity(self.isEditing ? 1.0 : 0.5))
                 
+                Stepper("Edition Performed : \(viewModel.nbEditionPerformed)", value: $viewModel.nbEditionPerformed, in: 0...130)
+                    .frame(width: 300)
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(5)
+                    .hoverEffect()
+                    .disabled(!self.isEditing) // Désactive le champ lorsque isEditing est false
+                    .opacity(0.5) // Grise le champ lorsque isEditing est false
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(greenMedium, lineWidth: 1).opacity(self.isEditing ? 1.0 : 0.5))
+                Picker("Tshirt Size", selection: $viewModel.tshirtSize) {
+                    ForEach(TshirtSizeEnum.allCases) { tshirt in
+                        Text(tshirt.rawValue)
+                    }
+                }.frame(width: 300)
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(5)
+                    .hoverEffect()
+                    .disabled(!self.isEditing) // Désactive le champ lorsque isEditing est false
+                    .opacity(0.5) // Grise le champ lorsque isEditing est false
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(greenMedium, lineWidth: 1).opacity(self.isEditing ? 1.0 : 0.5))
+                Picker("Lodging", selection: $viewModel.lodging) {
+                    ForEach(LodgingEnum.allCases) { lodgingField in
+                        Text(lodgingField.rawValue)
+                    }
+                }.frame(width: 300)
+                    .autocapitalization(.none)
+                    .disableAutocorrection(true)
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(5)
+                    .hoverEffect()
+                    .disabled(!self.isEditing) // Désactive le champ lorsque isEditing est false
+                    .opacity(0.5) // Grise le champ lorsque isEditing est false
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(greenMedium, lineWidth: 1).opacity(self.isEditing ? 1.0 : 0.5))
+                Picker("Food Regime", selection: $viewModel.foodRegime) {
+                    ForEach(FoodRegimeEnum.allCases) { foodRegimeField in
+                        Text(foodRegimeField.rawValue)
+                    }
+                }
+                .frame(width: 300)
+                .autocapitalization(.none)
+                .disableAutocorrection(true)
+                .padding()
+                .background(Color.white)
+                .cornerRadius(5)
+                .hoverEffect()
+                .disabled(!self.isEditing) // Désactive le champ lorsque isEditing est false
+                .opacity(0.5) // Grise le champ lorsque isEditing est false
+                .overlay(RoundedRectangle(cornerRadius: 10).stroke(greenMedium, lineWidth: 1).opacity(self.isEditing ? 1.0 : 0.5))
+                
                 Button(!self.isEditing ? "Edit" : "Save"){
                     Task{
                         if self.isEditing {

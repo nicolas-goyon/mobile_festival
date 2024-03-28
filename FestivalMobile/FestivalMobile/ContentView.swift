@@ -111,6 +111,8 @@ struct ContentView: View {
         //InscriptionListeCreneaux(viewModel: InscriptionCreneauxVM(festival: festival))
 //        RechercheJeux()
         //ProfileView(viewModel: volunteerVM)
+        // benevole28mars@gmail.com
+        // CeciEstMonMotDeP4sse
     }
 }
 
