@@ -8,7 +8,11 @@
 import Foundation
 import Combine
 
-class ObservableArray<T : Equatable>: ObservableObject, RandomAccessCollection {
+class ObservableArray<T : Equatable>: ObservableObject, RandomAccessCollection, Equatable{
+    static func == (lhs: ObservableArray<T>, rhs: ObservableArray<T>) -> Bool {
+        return lhs.array == rhs.array
+    }
+    
     @Published var array: [T] = []
     
     init(array: [T]) {

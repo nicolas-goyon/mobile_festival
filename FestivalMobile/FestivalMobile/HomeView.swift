@@ -14,6 +14,7 @@ struct HomeView: View {
                 Text("Home").font(.title)
                 Image("LogoFJM_couleur").resizable().scaledToFit()
                 Text("Connect yourself to know more about it")
+                FestivalDisplay()
             }
         }
     }

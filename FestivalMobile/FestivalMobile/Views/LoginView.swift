@@ -12,6 +12,7 @@ struct LoginView: View {
     @State var userEmail : String = ""
     @State var password : String = ""
     @StateObject var lvm = LoginViewModel()
+    @Binding var selectedMenu: String
 
     var body: some View {
             
@@ -29,7 +30,12 @@ struct LoginView: View {
                     HStack{
                         Button("Log in") {
                             Task{
-                                await lvm.login(email: self.userEmail, password: self.password)
+                                let res = await lvm.login(email: self.userEmail, password: self.password)
+                                if res != nil {
+                                    ConnexionToken.tokenInstance.token = res!
+                                    selectedMenu = "home"
+                                    
+                                }
                             }
                         }
                         .padding(10)

@@ -93,7 +93,3 @@ struct ProfileView: View {
         }
     }
 }
-
-#Preview {
-    ProfileView(viewModel: VolunteerVM())
-}
