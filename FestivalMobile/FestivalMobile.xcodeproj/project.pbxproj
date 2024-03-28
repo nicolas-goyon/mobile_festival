@@ -137,6 +137,7 @@
 		B7F617CF2BA1B20F00235E4F /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		B7F617D12BA1B23700235E4F /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 		B7F617D52BA1C2E400235E4F /* SelectionPosteVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionPosteVM.swift; sourceTree = "<group>"; };
+		B7FE5C622BB58B09009BAE1B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +207,7 @@
 		B77DF58B2B8CC62800A07876 = {
 			isa = PBXGroup;
 			children = (
+				B7FE5C622BB58B09009BAE1B /* README.md */,
 				B77DF5962B8CC62800A07876 /* FestivalMobile */,
 				B77DF5A72B8CC62A00A07876 /* FestivalMobileTests */,
 				B77DF5B12B8CC62B00A07876 /* FestivalMobileUITests */,
