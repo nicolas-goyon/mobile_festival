@@ -36,7 +36,7 @@ class CreneauChoixVM : ObservableObject, Hashable, Equatable, Subscriber {
         hasher.combine(idCreneau)
     }
     
-    var idCreneau : Int
+    var idCreneau : String
     var dateHeureDebut : Date
     var dateHeureFin : Date
     var postes : [SelectionPosteVM]
@@ -55,7 +55,7 @@ class CreneauChoixVM : ObservableObject, Hashable, Equatable, Subscriber {
     var posteSelectList : MultiSelectListVM<SelectionPosteVM>
     var animationSelectList : MultiSelectListVM<SelectionAnimationVM>
     
-    init(idCreneau: Int, dateDebut: Date, dateFin: Date, postes: [SelectionPosteVM], animations: [SelectionAnimationVM]){
+    init(idCreneau: String, dateDebut: Date, dateFin: Date, postes: [SelectionPosteVM], animations: [SelectionAnimationVM]){
         self.idCreneau = idCreneau
         self.dateHeureDebut = dateDebut
         self.dateHeureFin = dateFin

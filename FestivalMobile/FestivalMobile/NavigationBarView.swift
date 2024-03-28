@@ -11,6 +11,7 @@ struct NavigationBarView: View {
     
     @ObservedObject var viewModel : VolunteerVM
     @State private var selectedView = "home"
+    @ObservedObject var connectionToken = ConnexionToken.tokenInstance
     
     let color = UIColor(red: 115/255, green: 150/255, blue: 0/255, alpha: 1)
     
@@ -21,23 +22,38 @@ struct NavigationBarView: View {
                     Label("Home", systemImage: "house")
                 }
                 .tag("home")
+            // print the following if connected (connectionToken.tokenInstance.token != nil)
+            if connectionToken.token == nil {
+                RegisterView()
+                    .tabItem {
+                        Label("Register", systemImage: "person.crop.circle.fill.badge.plus")
+                    }
+                    .tag("register")
+                
+                LoginView(selectedMenu: $selectedView)
+                    .tabItem {
+                        Label("Login", systemImage: "person.crop.circle.fill")
+                    }
+                    .tag("login")
+            }
+            else {
+                ProfileView(viewModel: viewModel)
+                    .tabItem {
+                        Label("Profile", systemImage: "person.crop.circle.fill")
+                    }
+                    .tag("profile")
+                Button(action: {
+                    ConnexionToken.tokenInstance.token = nil
+                    selectedView = "home"
+                }) {
+                    Text("Logout")
+                }
+                .tabItem {
+                    Label("Logout", systemImage: "person.crop.circle.fill.badge.minus")
+                }
+                .tag("logout")
+            }
             
-            RegisterView()
-                .tabItem {
-                    Label("Register", systemImage: "person.crop.circle.fill.badge.plus")
-                }
-                .tag("register")
-
-            LoginView()
-                .tabItem {
-                    Label("Login", systemImage: "person.crop.circle.fill")
-                }
-                .tag("login")
-            ProfileView(viewModel: viewModel)
-                .tabItem {
-                    Label("Profile", systemImage: "person.crop.circle.fill")
-                }
-                .tag("profile")
         }
         .accentColor(Color(color))
         .navigationViewStyle(StackNavigationViewStyle())

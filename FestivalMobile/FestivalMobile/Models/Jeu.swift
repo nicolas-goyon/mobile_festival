@@ -9,7 +9,7 @@ import Foundation
 
 class Jeu{
     
-    public private(set) var _id :           Int
+    public private(set) var _id :           String
     public private(set) var nom :           String
     public private(set) var type :          String?
     public private(set) var joueurs_min :   Int?
@@ -30,7 +30,7 @@ class Jeu{
     public private(set) var editeur :       String
     
     
-    init(id : Int, nom : String, type : String?, joueurs_min : Int?, joueurs_max : Int?, age_min : Int?, duree : Int?, notice : String?, a_animer : Bool, recu : Bool, mechanismes : String?, themes : String?, tags : String?, description : String?, image : String?, logo : String?, video : String?, auteur : String?, editeur : String){
+    init(id : String, nom : String, type : String?, joueurs_min : Int?, joueurs_max : Int?, age_min : Int?, duree : Int?, notice : String?, a_animer : Bool, recu : Bool, mechanismes : String?, themes : String?, tags : String?, description : String?, image : String?, logo : String?, video : String?, auteur : String?, editeur : String){
         self._id = id
         self.nom = nom
         self.type = type
@@ -52,7 +52,27 @@ class Jeu{
         self.editeur = editeur
     }
     
-    
+    init(dto: GameDTO){
+        self._id = dto.id
+        self.nom = dto.name
+        self.type = dto.type
+        self.joueurs_min = dto.minPlayers
+        self.joueurs_max = dto.maxPlayers
+        self.age_min = dto.minAge
+        self.duree = dto.duration
+        self.notice = dto.notice
+        self.a_animer = dto.toAnimate
+        self.recu = dto.received
+        self.mechanismes = dto.mechanisms
+        self.themes = dto.themes
+        self.tags = dto.tags
+        self.description = dto.description
+        self.image = dto.image
+        self.logo = dto.logo
+        self.video = dto.video
+        self.auteur = dto.author
+        self.editeur = dto.editor
+    }
     
     
     
