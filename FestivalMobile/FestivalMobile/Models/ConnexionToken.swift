@@ -11,6 +11,7 @@ class ConnexionToken : ObservableObject {
     public private(set) static var tokenInstance : ConnexionToken = ConnexionToken()
     
     @Published var token : String?
+    @Published var id: String?
     
     private init(){
         self.token = nil

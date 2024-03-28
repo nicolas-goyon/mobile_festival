@@ -33,4 +33,28 @@ struct InscriptionCreneauxVM{
         // sort by hours (ascending)
         return creneaux.sorted{ $0.dateHeureDebut < $1.dateHeureDebut }
     }
+    
+    func inscription(){
+        debugPrint("Inscription")
+        for creneau in self.creneaux{
+            if (creneau.typeChoix != TypeChoix.SansChoix){
+                debugPrint("===> Inscription à \(formatHeures(creneau.dateHeureDebut)) - \(formatHeures(creneau.dateHeureFin))")
+                let selection : [any ListItemProtocol] = (creneau.typeChoix == TypeChoix.Animation) ? creneau.animationSelectList.selectedData.map{$0.data} : creneau.posteSelectList.selectedData.map{$0.data}
+                for item in selection{
+                    let id = ConnexionToken.tokenInstance.id!
+                    debugPrint("===> { zoneId: \(item.id), volunteerId: \(id), slotId: \(creneau.idCreneau) }")
+                }
+            }
+        }
+    }
+    
+    
+    
+    
+    func formatHeures(_ date: Date) -> String{
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "fr_FR")
+        formatter.dateFormat = "HH:mm"
+        return formatter.string(from: date)
+    }
 }

@@ -29,7 +29,7 @@ struct InscriptionListeCreneaux: View {
                     
                     ForEach(viewModel.getCreneauxByDate(journee: viewModel.journees[jour]), id: \.self){ creneau in
                         NavigationLink(destination: InscriptionCreneau(viewModel: creneau)){
-                            Text("\(creneau.dateHeureDebut.formatted(.dateTime.hour().minute().locale(Locale(identifier: "fr_FR"))) ) - \(creneau.dateHeureFin.formatted(.dateTime.hour().minute().locale(Locale(identifier: "fr_FR"))))")
+                            Text("\(formatHeures(creneau.dateHeureDebut)) - \(formatHeures(creneau.dateHeureFin))")
                             SelectionPreview(viewModel: creneau)
                         }
                     }
@@ -37,7 +37,7 @@ struct InscriptionListeCreneaux: View {
                 
                 
                 // Bouton s'inscrire
-                Button(action: {}, label: {
+                Button(action: {viewModel.inscription()}, label: {
                     Text("Validation inscription")
                 })
             })
@@ -52,5 +52,12 @@ struct InscriptionListeCreneaux: View {
         formatter.locale = Locale(identifier: "fr_FR")
         formatter.dateFormat = "EEEE d MMMM"
         return formatter.string(from: date).prefix(3) + " " + formatter.string(from: date).components(separatedBy: " ")[1]
+    }
+    
+    func formatHeures(_ date: Date) -> String{
+        let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "fr_FR")
+        formatter.dateFormat = "HH:mm"
+        return formatter.string(from: date)
     }
 }

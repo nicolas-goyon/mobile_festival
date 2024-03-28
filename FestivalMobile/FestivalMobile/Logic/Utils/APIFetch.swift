@@ -16,4 +16,17 @@ struct APIFetch {
         let result = try decoder.decode(codableClass, from: data)
         return result
     }
+    
+    static func getDTOWithToken<T : Codable>(urlEndpoint: String, codableClass: T.Type, token : String) async throws -> T {
+        let token = token
+        let url = URL(string: ProcessInfo.processInfo.environment["API_URL"]!+urlEndpoint)!
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        let (data, _) = try await URLSession.shared.data(for: request)
+        let decoder = JSONDecoder()
+        let result = try decoder.decode(codableClass, from: data)
+        return result
+    }
 }

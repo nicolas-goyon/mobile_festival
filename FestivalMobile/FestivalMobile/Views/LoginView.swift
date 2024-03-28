@@ -32,9 +32,12 @@ struct LoginView: View {
                             Task{
                                 let res = await lvm.login(email: self.userEmail, password: self.password)
                                 if res != nil {
+                                    let volunteerVM = VolunteerVM()
+                                    await volunteerVM.fetchSelf()
+                                    let volunteerId = volunteerVM.id
                                     ConnexionToken.tokenInstance.token = res!
+                                    ConnexionToken.tokenInstance.id = volunteerId
                                     selectedMenu = "home"
-                                    
                                 }
                             }
                         }

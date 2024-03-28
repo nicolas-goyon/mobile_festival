@@ -29,7 +29,7 @@ class LoginViewModel: ObservableObject {
             
             let decoder = JSONDecoder()
             let loginEntity = try decoder.decode(LoginEntity.self, from: data)
-            
+            UserDefaults.standard.set(loginEntity.token , forKey: "token")
             return loginEntity.token
             
         } catch {

@@ -9,7 +9,7 @@ import Foundation
 
 struct VolunteerDTO : Codable {
     
-    var id : String = UUID().uuidString
+    var id : String
     let firstname : String
     let lastname : String
     let email : String
@@ -26,6 +26,7 @@ struct VolunteerDTO : Codable {
     let associations: [String]?
     
     init(firstname: String, lastname: String, email: String, password: String?, nbEditionPerformed: Int, tshirtSize: TshirtSizeEnum, lodging: LodgingEnum, foodRegime: FoodRegimeEnum, address: String? = nil, phone: String? = nil, username: String? = nil, avatarUrl: String? = nil, is_admin: Bool? = nil ,associations: [String]? = nil) {
+        self.id = UUID().uuidString
         self.firstname = firstname
         self.lastname = lastname
         self.email = email
@@ -71,3 +72,5 @@ enum FoodRegimeEnum : String, Codable, CaseIterable, Identifiable {
     case carnivore = "carnivore"
     case autre = "autre"
 }
+
+
