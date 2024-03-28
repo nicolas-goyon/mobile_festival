@@ -81,9 +81,11 @@ struct ProfileView: View {
                     .disabled(!self.isEditing) // Désactive le champ lorsque isEditing est false
                     .opacity(0.5) // Grise le champ lorsque isEditing est false
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(greenMedium, lineWidth: 1).opacity(self.isEditing ? 1.0 : 0.5))
+                
                 Picker("Tshirt Size", selection: $viewModel.tshirtSize) {
                     ForEach(TshirtSizeEnum.allCases) { tshirt in
                         Text(tshirt.rawValue)
+                            .tag(tshirt.rawValue)
                     }
                 }.frame(width: 300)
                     .autocapitalization(.none)
@@ -95,9 +97,11 @@ struct ProfileView: View {
                     .disabled(!self.isEditing) // Désactive le champ lorsque isEditing est false
                     .opacity(0.5) // Grise le champ lorsque isEditing est false
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(greenMedium, lineWidth: 1).opacity(self.isEditing ? 1.0 : 0.5))
+                
                 Picker("Lodging", selection: $viewModel.lodging) {
                     ForEach(LodgingEnum.allCases) { lodgingField in
                         Text(lodgingField.rawValue)
+                            .tag(lodgingField.rawValue)
                     }
                 }.frame(width: 300)
                     .autocapitalization(.none)
@@ -112,6 +116,7 @@ struct ProfileView: View {
                 Picker("Food Regime", selection: $viewModel.foodRegime) {
                     ForEach(FoodRegimeEnum.allCases) { foodRegimeField in
                         Text(foodRegimeField.rawValue)
+                            .tag(foodRegimeField.rawValue)
                     }
                 }
                 .frame(width: 300)
